@@ -1,0 +1,16 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  background-color: $bgcolor-primary;
+  color: $color-white-primary;
+
+  @include font();
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

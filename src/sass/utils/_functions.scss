@@ -1,0 +1,3 @@
+@function gettransition($key) {
+  @return map-get($transitions, $key);
+}

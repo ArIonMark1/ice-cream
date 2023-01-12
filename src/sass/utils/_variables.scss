@@ -1,0 +1,61 @@
+// Background-color
+$bgcolor-primary: #84a278;
+
+// Background-color Card Section Products
+$bgcolor-primary-light: #aec6a5;
+$bgcolor-primary-gradient: linear-gradient(
+    0deg,
+    rgba(156, 190, 143, 0.7),
+    rgba(156, 190, 143, 0.7)
+  ),
+  #d9d9d9;
+
+$bgcolor-accent-light: #efd478;
+$bgcolor-accent-linear: linear-gradient(
+    0deg,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  ),
+  #d9d9d9;
+
+$bgcolor-secondary: #d6936d;
+$bgcolor-secondary-linear: linear-gradient(
+    0deg,
+    rgba(213, 117, 63, 0.7),
+    rgba(213, 117, 63, 0.7)
+  ),
+  #d9d9d9;
+
+// Color
+$color-accent: #f8d24e;
+$color-button-hover: #0a8817;
+$color-white-primary: #ffffff;
+$color-white-secondary: #fcfcfc;
+$color-black-primary: #131313;
+$color-black-light: #7a7a7a;
+
+// Box-shadow
+$box-shadow-primary: 0px 8px 30px rgba(153, 114, 23, 0.25);
+$box-shadow-secondary: 0px 8px 30px rgba(0, 0, 0, 0.25);
+$box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+// Border-radius
+$border-radius-btn-primary: 10px;
+$border-radius-btn-secondary: 8px;
+$border-radius-label: 6px;
+
+// Transition
+
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
+
+$transitions: (
+  'color': color $duration $cubic,
+  'background-color': background-color $duration $cubic,
+  'transform': transform $duration $cubic,
+  'box-shadow': box-shadow $duration $cubic,
+  'border': border $duration $cubic,
+  'opacity': opacity $duration $cubic,
+  'visibility': visibility $duration $cubic,
+  'fill': fill $duration $cubic,
+);
