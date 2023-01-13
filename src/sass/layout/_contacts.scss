@@ -1,0 +1,156 @@
+.contacts {
+  background-color: $bgcolor-primary;
+}
+.contacts__list {
+  @extend %list;
+}
+.contacts__item {
+  width: 280px;
+  height: 412px;
+  padding: 40px 32px 24px;
+  background-color: $color-white-primary;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin: 0px auto;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.address {
+  padding: 0px;
+}
+.contacts__list,
+.address__list,
+.time-work__list,
+.communication__link,
+.contacts__modal {
+  @extend %list;
+}
+.contacts-title {
+  @include font(12, 500, 18, 0.04);
+
+  @include centerdFlex;
+
+  width: 80px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: $color-accent;
+
+  color: $color-black-primary;
+  margin-bottom: 20px;
+}
+.cont-title {
+  width: 130px;
+}
+
+.address__city {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $color-black-primary;
+  margin-bottom: 8px;
+}
+.address__map {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $bgcolor-secondary;
+}
+
+.address__list::after,
+.time-work__list::after {
+  content: '';
+  display: block;
+  width: 100%;
+  margin: 24px 0px;
+  border: 1px solid $color-button-hover;
+}
+.address__list {
+  @extend %list;
+}
+
+.time-work__card:not(:last-child) {
+  margin-bottom: 8px;
+}
+.time-work__week {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $color-black-primary;
+}
+.time-work__time {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $color-button-hover;
+}
+.communication__phone {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-black-primary;
+  margin-bottom: 6px;
+}
+.communication__mail {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $color-black-primary;
+}
+
+.contacts__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+.contacts__btn {
+  min-width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $color-black-primary;
+}
+.contacts__btn-loc {
+  background-color: $color-accent;
+  border-color: $color-accent;
+}
+.contacts__btn-fran {
+  background-color: $bgcolor-primary;
+  border-color: $color-accent;
+}
+
+.contacts__modal-item {
+  &:first-child {
+    margin-bottom: 16px;
+  }
+}
