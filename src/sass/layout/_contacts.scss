@@ -2,8 +2,7 @@
 background-color: $bgcolor-primary;
 }
 .contacts__list {
-  padding: 0px;
-  margin: 0px;
+    @extend %list;
  }
 .contacts__item {
 width: 280px;
@@ -20,6 +19,7 @@ margin-bottom: 16px;
   }
 }
 }
+
 .address {
     padding: 0px;
 }
