@@ -22,6 +22,13 @@
 .address {
   padding: 0px;
 }
+.contacts__list,
+.address__list,
+.time-work__list,
+.communication__link,
+.contacts__modal {
+  @extend %list;
+}
 .contacts-title {
   @include font(12, 500, 18, 0.04);
 
@@ -65,18 +72,21 @@
   display: block;
   width: 100%;
   margin: 24px 0px;
-  border: 1px solid $color-accent;
+  border: 1px solid $color-button-hover;
 }
-
 .address__list {
   @extend %list;
+}
+
+.time-work__card:not(:last-child) {
+  margin-bottom: 8px;
 }
 .time-work__week {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
+  font-size: 12px;
+  line-height: 1.83;
   letter-spacing: 0.04em;
   color: $color-black-primary;
 }
@@ -84,28 +94,35 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
+  font-size: 12px;
+  line-height: 1.83;
   letter-spacing: 0.04em;
-  color: $color-accent;
+  color: $color-button-hover;
 }
 .communication__phone {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: $color-black-primary;
-  margin-bottom: 4px;
-  margin-top: 32px;
+  margin-bottom: 6px;
 }
 .communication__mail {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   color: $color-black-primary;
+}
+
+.contacts__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
 }
 .contacts__btn {
   min-width: 196px;
@@ -122,4 +139,18 @@
   align-items: center;
   text-align: center;
   color: $color-black-primary;
+}
+.contacts__btn-loc {
+  background-color: $color-accent;
+  border-color: $color-accent;
+}
+.contacts__btn-fran {
+  background-color: $bgcolor-primary;
+  border-color: $color-accent;
+}
+
+.contacts__modal-item {
+  &:first-child {
+    margin-bottom: 16px;
+  }
 }
