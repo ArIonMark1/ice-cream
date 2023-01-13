@@ -1,0 +1,127 @@
+.contacts {
+background-color: $bgcolor-primary;
+}
+.contacts__list {
+  padding: 0px;
+  margin: 0px;
+ }
+.contacts__item {
+width: 280px;
+height: 412px;
+padding: 40px 32px 24px;
+background-color: $color-white-primary;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px; 
+margin: 0px auto;  
+
+&:not(:last-child) {
+    @media screen and (max-width: 767px)  {
+margin-bottom: 16px;
+  }
+}
+}
+.address {
+    padding: 0px;
+}
+.contacts-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    width: 80px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: $color-accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: $color-black-primary;
+    margin-bottom: 20px;
+}
+.cont-title {
+    width: 130px;
+}
+
+.address__city {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.86;
+letter-spacing: 0.04em;
+color: $color-black-primary;
+margin-bottom: 8px;
+}
+.address__map {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: $bgcolor-secondary;
+}
+
+.address__list::after,
+.time-work__list::after {
+    content: '';    
+display: block;
+width: 100%;
+margin: 24px 0px;
+border: 1px solid $color-accent;
+}
+.time-work__week {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $color-black-primary;
+}
+.time-work__time {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $color-accent;
+}
+.communication__phone {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: $color-black-primary;
+margin-bottom: 4px;
+margin-top: 32px;
+}
+.communication__mail {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-black-primary;   
+}
+.contacts__btn {
+    min-width: 196px;
+    height: 42px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 1.28;
+display: flex;
+align-items: center;
+text-align: center;
+color: $color-black-primary;
+}
