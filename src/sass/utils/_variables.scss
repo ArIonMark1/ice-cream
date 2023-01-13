@@ -1,5 +1,6 @@
 // Background-color
 $bgcolor-primary: #84a278;
+$bgcolor-modal-input: rgba(248, 210, 78, 0.1);
 
 // Background-color Card Section Products
 $bgcolor-primary-light: #aec6a5;
@@ -43,6 +44,14 @@ $box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 $border-radius-btn-primary: 10px;
 $border-radius-btn-secondary: 8px;
 $border-radius-label: 6px;
+
+// Border
+$border-btn-primary: 2px solid #f8d24e;
+$border-btn-secondary: 2px solid #0a8817;
+
+$border-modal-input: 1px solid #84a178;
+$border-modal-primary: 2px solid #9cbe8f;
+$border-modal-secondary: 2px solid #d6936d;
 
 // Transition
 

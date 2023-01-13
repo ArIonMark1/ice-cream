@@ -43,7 +43,7 @@
   text-align: center;
 
   border-radius: $border-radius-btn-primary;
-  border: 2px solid #f8d24e;
+  border: $border-btn-primary;
 
   background-color: transparent;
   color: $color-black-primary;
@@ -53,7 +53,7 @@
   transition: gettransition(background-color), gettransition(color);
 
   &:hover {
-    border: 2px solid $color-button-hover;
+    border: $border-btn-secondary;
   }
 
   &:focus {
