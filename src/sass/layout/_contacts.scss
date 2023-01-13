@@ -3,7 +3,6 @@
 }
 .contacts__list {
   @extend %list;
-  
 }
 .contacts__item {
   width: 280px;
@@ -24,19 +23,15 @@
   padding: 0px;
 }
 .contacts-title {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(12, 500, 18, 0.04);
+
+  @include centerdFlex;
+
   width: 80px;
   height: 22px;
   border-radius: 4px;
   background-color: $color-accent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.04em;
+
   color: $color-black-primary;
   margin-bottom: 20px;
 }
