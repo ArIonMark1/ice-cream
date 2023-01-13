@@ -2,8 +2,8 @@
   background-color: $bgcolor-primary;
 }
 .contacts__list {
-  padding: 0px;
-  margin: 0px;
+  @extend %list;
+  
 }
 .contacts__item {
   width: 280px;
@@ -71,6 +71,10 @@
   width: 100%;
   margin: 24px 0px;
   border: 1px solid $color-accent;
+}
+
+.address__list {
+  @extend %list;
 }
 .time-work__week {
   font-family: 'Montserrat';
