@@ -8,3 +8,55 @@
   text-decoration: none;
 }
 
+%btn-primary {
+  padding: 12px 34px;
+
+  font-family: inherit;
+  @include font(14, 600, 18, 0);
+
+  text-align: center;
+
+  border-radius: $border-radius-btn-primary;
+  border: none;
+
+  background-color: $color-accent;
+  color: $color-black-primary;
+
+  cursor: pointer;
+
+  transition: gettransition(background-color), gettransition(color);
+
+  &:hover {
+    background-color: $color-button-hover;
+  }
+  &:focus {
+    color: $color-white-primary;
+  }
+}
+
+%btn-secondary {
+  padding: 12px 26px;
+
+  font-family: inherit;
+  @include font(14, 600, 18, 0);
+
+  text-align: center;
+
+  border-radius: $border-radius-btn-primary;
+  border: 2px solid #f8d24e;
+
+  background-color: transparent;
+  color: $color-black-primary;
+
+  cursor: pointer;
+
+  transition: gettransition(background-color), gettransition(color);
+
+  &:hover {
+    border: 2px solid $color-button-hover;
+  }
+
+  &:focus {
+    color: $color-white-primary;
+  }
+}
