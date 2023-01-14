@@ -17,6 +17,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     padding: 0;
@@ -34,18 +36,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    width: 152px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages__card:not(:last-child) {
-    margin-right: 80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__card:not(:last-child) {
-    margin-right: 32px;
+  @media screen and (min-width: 1200px) {
+    width: 368px;
   }
 }
 
@@ -53,7 +47,7 @@
   display: flex;
   content: '';
   margin-bottom: 16px;
-  width: auto;
+  width: 100%;
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -67,19 +61,19 @@
   }
 }
 
-.icon-milk::before {
-  background-image: url("../images/advantages-svg/cow.svg");
+.icon-frame::before {
+  background-image: url("../images/advantages-svg/frame.png");
 }
 
 .icon-weight::before {
-  background-image: url("../images/advantages-svg/weight.svg");
+  background-image: url("../images/advantages-svg/weight.png");
 }
 
 .icon-ice-cream::before {
-  background-image: url("../images/advantages-svg/ice-crema.svg");
+  background-image: url("../images/advantages-svg/ice-crema.png");
 }
 
-.advantages__quote {
+.advantages__title {
   margin-bottom: 16px;
 
   font-family: 'Montserrat';
@@ -89,7 +83,7 @@
   line-height: 1.22;
   letter-spacing: 0.04em;
 
-  color: #FCFCFC;
+  color: $color-white-secondary;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
@@ -103,18 +97,23 @@
 }
 
 .advantages__text {
+  margin: 0 auto;
+  max-width: 230px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.66;
 
-  color: #FCFCFC;
+  color: $color-white-secondary;
 
   @media screen and (min-width: 768px) {
+    // max-width: 152px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 368px;
+    margin-right: 0;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.02em;
