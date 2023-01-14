@@ -52,15 +52,15 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        z-index: 1;
     
-            content: "";
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            border-radius: 50%;
-            z-index: 1;
-        }
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url(../images/products/ice-cream11.jpg);
+
+    }
 }
 
 
@@ -68,16 +68,17 @@
     &::before {
             position: absolute;
             top: 0;
-            left: 50%;
-            // transform: translateY(0px);
+            left: 50%;            
             transform: translate(-50%, -45.5%);
-            
     
             content: "";
             width: 200px;
             height: 200px;
-            background-color: yellow;
+           
             border-radius: 50%;
+            background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+                #D9D9D9;
+            box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
         }
 }
 
