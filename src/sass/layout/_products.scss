@@ -1,28 +1,52 @@
 .products {
     max-width: 1600px;
-    
-    padding: 118px 0;
+
+    padding: 60px 0;
 
     background-image: url(../images/products/Backgroud_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-   color: $color-black-primary;
+    color: $color-black-primary;
 }
 
 
-.products__label {}
+.products__label {
+    @include font(18,800,22,0.04);
+    text-align: center;
+}
 
-.products__hearder {}
+.products__hearder {
+    font-family: 'Seymour One';
+    @include font(30, 400, 38, 0.04);
+    text-align: center;
+    text-transform: uppercase;
+}
 
-.products__list {}
+.products__list {
+    @extend %list;
 
-.products__item {}
+}
 
-.products__title {}
+.products__item {
+    padding: 123px 40px 16px;
+}
 
-.products__description {}
+.products__title {
+    margin-bottom: 40px;
+
+    @include font(20, 700, 24, 0.04);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products__description {
+    margin-bottom: 101px;
+
+    @include font(14, 400, 25, 0.04);
+    text-align: center;
+}
 
 .products__button {}
 
