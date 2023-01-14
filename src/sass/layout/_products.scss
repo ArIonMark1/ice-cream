@@ -270,10 +270,16 @@
 
     display: block;
     padding:0;
+
+    color: $color-black-primary;
     background-color: transparent;
     border-color: transparent;
 
     @include tablet {
         bottom: 12px;
     }
+}
+
+.products__button-icon{
+    fill: currentColor;
 }
