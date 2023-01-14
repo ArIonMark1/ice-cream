@@ -61,6 +61,14 @@
             height: 200px;
             border-radius: 50%;
             background-image: url(../images/products/ice-cream11.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/ice-cream11-2x.jpg);
+                }
         }
 
         &::after {
@@ -96,6 +104,14 @@
             height: 200px;
             border-radius: 50%;
             background-image: url(../images/products/ice-coffee11.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/products/ice-coffee11-2x.jpg);
+            }
         }
 
         &::after {
@@ -129,6 +145,14 @@
                 height: 200px;
                 border-radius: 50%;
                 background-image: url(../images/products/milkshakes11.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/milkshakes11-2x.jpg);
+                }
             }
     
             &::after {
