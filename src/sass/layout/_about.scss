@@ -1,0 +1,208 @@
+.about{
+    background-color: $bgcolor-primary;
+}
+
+.about__set{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+
+    @include tablet{
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include desktop{
+    display: flex;
+    flex-direction: column-reverse;
+
+    }
+}
+  
+} 
+.about__title{
+width: 210px; 
+font-family: 'Seymour One';
+@include font(30, 400, 38, 0.04);
+text-align: center;
+text-transform: uppercase;
+color: $color-white-secondary;
+ @include tablet{
+    width: 100%;
+    @include font(34, 400, 43, 0.06);
+    text-align: center;  
+    text-transform: uppercase;
+    margin-top: 12px;
+ 
+ }
+
+@include desktop {
+width:100%;
+@include font(36, 400, 45, 0.06);
+text-align: center;
+text-transform: uppercase;
+}
+
+}
+.about__subtitle{
+@include font(18, 700, 22, 0.03);
+text-align: center;
+text-transform: uppercase;
+color: $color-white-secondary;
+margin-top: 12px;
+
+
+  @include tablet{
+    @include font(22, 800, 27, 0.04);
+margin-top: auto;
+ 
+ }
+   @include desktop{
+    @include font(30, 800, 37, 0.04);
+
+   }
+}
+
+.about__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-top: 62px;
+      & p + p{
+        margin-top: 4px;
+     }
+
+     @include tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 72px;
+        align-items: stretch;
+        // justify-content: space-between;
+        
+        & p + p{
+            margin-top: 8px;
+         }
+     }
+
+}
+
+.about__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    background: $bgcolor-accent-linear;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    width: 279px;
+    height: 278px;   
+    border-radius: 140px;
+    margin-top: 32px;
+    margin-bottom: 62px;
+
+    @include tablet{
+        margin: 0;
+        width: 330px;
+        height: 330px; 
+        border-radius: 165px;
+        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    }
+
+    @include desktop{
+
+        width: 490px;
+        height: 490px;
+        border-radius: 250px;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+}
+
+.about__image{
+    position: absolute;
+    transform: translateY(5%);
+    left: 0px;
+    top: 0px;
+    border-radius: 140px;
+    background-image:
+     url(../images/about/cow_mob-1x.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 279px;
+    height: 280px;
+
+    @include tablet{
+        background-image:
+        url(../images/about/cow_tablet-1x.jpg);
+        width: 327px;
+        height: 304px; 
+        transform: translateY(9%);
+        border-radius: 1228px;
+    }
+
+    @include desktop{
+        background-image:
+        url(../images/about/cow_desktop-1x.jpg);
+        width: 490px;
+        height: 490px;
+        border-radius: 1852.2px;
+        transform: translateY(7%);
+    }
+    
+
+}
+.about__paragraph{
+    @include tablet{
+        // justify-content: space-between;
+        margin-left: 38px;
+        padding-top: 8px;
+        
+    }
+    @include desktop{
+        margin-left: 109px;
+    }
+}
+
+.about__text{
+    width: 220px;
+    @include font(12, 400, 21, 0.04);
+    text-align: center;
+    color: $color-white-secondary;
+    
+     @include tablet{
+        text-align: left;
+        width: 336px;
+        }
+     @include desktop{
+        @include font(16, 400, 28, 0.04);  
+        width: 463px;
+    
+     }
+    
+    }
+    .about__hidden{
+        display: none;
+        @include tablet{
+            display: block;
+            }
+    }
+
+    .about-btn{
+        margin-top: 24px;
+        @extend %btn-primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        @include tablet{
+            margin-top:32px;
+            margin-left:0;
+            }
+
+        @include desktop{
+            margin-top: 54px;
+
+        }
+        
+    }
