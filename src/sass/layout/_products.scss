@@ -43,7 +43,7 @@
     position: relative;
 
     width: 280px;
-    height: 420px;    
+    height: 420px;
     border-radius: 24px;
 
     &:nth-child(1) {
@@ -95,7 +95,7 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background-image: url(../images/products/ice-cream11.jpg);
+            background-image: url(../images/products/ice-coffee11.jpg);
         }
 
         &::after {
@@ -128,7 +128,7 @@
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
-                background-image: url(../images/products/ice-cream11.jpg);
+                background-image: url(../images/products/milkshakes11.jpg);
             }
     
             &::after {
@@ -149,7 +149,6 @@
 }
 
 
-
 .products__title {
     margin-bottom: 40px;
 
@@ -158,15 +157,19 @@
     text-transform: uppercase;
 }
 
-.products__description {
-    margin-bottom: 101px;
-
+.products__description {    
     @include font(14, 400, 25, 0.04);
     text-align: center;
 }
 
 .products__button {
-    display: block;
-}
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
 
-//.products__button-icon {}
+    display: block;
+    padding:0;
+    background-color: transparent;
+    border-color: transparent;
+}
