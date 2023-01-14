@@ -1,6 +1,7 @@
 .advantages {
   padding-top: 50px;
   padding-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 204px;
   }
@@ -11,11 +12,11 @@
 
 .advantages__items {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     display: flex;
-    padding: 0px 56px;
   }
   @media screen and (min-width: 1200px) {
     padding: 0;
@@ -24,10 +25,13 @@
 
 .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .advantages__card {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -45,6 +49,36 @@
   }
 }
 
+.advantages__card::before {
+  display: flex;
+  content: '';
+  margin-bottom: 16px;
+  width: auto;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.icon-milk::before {
+  background-image: url("../images/advantages-svg/cow.svg");
+}
+
+.icon-weight::before {
+  background-image: url("../images/advantages-svg/weight.svg");
+}
+
+.icon-ice-cream::before {
+  background-image: url("../images/advantages-svg/ice-crema.svg");
+}
+
 .advantages__quote {
   margin-bottom: 16px;
 
@@ -56,6 +90,7 @@
   letter-spacing: 0.04em;
 
   color: #FCFCFC;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 12px;
     font-size: 48px;
@@ -68,12 +103,12 @@
 }
 
 .advantages__text {
-
   font-weight: 700;
   font-size: 12px;
   line-height: 1.66;
 
   color: #FCFCFC;
+
   @media screen and (min-width: 768px) {
     font-weight: 400;
     font-size: 14px;
@@ -82,5 +117,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.75;
+    letter-spacing: 0.02em;
   }
 }
