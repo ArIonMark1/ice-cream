@@ -13,11 +13,16 @@
 
 
 .products__label {
+    margin-bottom: 12px;
+
     @include font(18,800,22,0.04);
     text-align: center;
+    
 }
 
 .products__hearder {
+    margin-bottom: 148px;
+
     font-family: 'Seymour One';
     @include font(30, 400, 38, 0.04);
     text-align: center;
@@ -29,17 +34,51 @@
     display: flex;
     flex-direction: column;
     gap: 168px;
-
+    align-items: center;
 }
 
 .products__item {
     padding: 123px 40px 16px;
+    position: relative;
     
     width: 280px;
     height: 420px;
 
     background: $bgcolor-primary-light;
     border-radius: 24px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            z-index: 1;
+        }
+}
+
+
+.products__box{
+    &::before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            // transform: translateY(0px);
+            transform: translate(-50%, -45.5%);
+            
+    
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
 }
 
 .products__title {
@@ -57,6 +96,8 @@
     text-align: center;
 }
 
-.products__button {}
+.products__button {
+    display: block;
+}
 
-.products__button-icon {}
+//.products__button-icon {}
