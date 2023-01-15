@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     height: 453px;
+    z-index: 999;
 
     @media screen and (min-width: 480px) {
       width: 480px;
@@ -145,6 +146,8 @@
 
   &__products-lorem {
     display: block;
+    position: absolute;
+    z-index: 1;
   }
 
   &__link {
@@ -238,7 +241,7 @@
   &__dots-image {
     position: absolute;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1200px) {
       display: none;
     }
 
