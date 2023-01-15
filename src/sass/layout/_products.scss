@@ -89,6 +89,7 @@
         width: 224px;
         height: 428px;
         padding: 108px 26px 12px;
+        border-radius: 15.7808px;
     }
 
 
@@ -264,19 +265,21 @@
 
 .products__button {
     position: absolute;
-    bottom: 16px;
+    bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
 
     display: block;
-    padding:0;
+    padding: 10px;
 
+    cursor: pointer;
     color: $color-black-primary;
     background-color: transparent;
     border-color: transparent;
+    border: none;
 
     @include tablet {
-        bottom: 12px;
+        bottom: 2px;
     }
 }
 
