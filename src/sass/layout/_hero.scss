@@ -1,8 +1,8 @@
 .hero {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 
-    &__box {
+  &__box {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -10,395 +10,400 @@
     left: 0;
     height: 453px;
 
-        @media screen and (min-width: 480px) {
-            width: 480px;
-            height: 357px;
-        }
-
-        @media screen and (min-width: 768px) {
-            width: 768px;
-            height: 349px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            height: 591px;
-        }
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 357px;
     }
 
-    &__title-number {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-
-         @media screen and (max-width: 768px) {
-            padding-top: 40px;
-            padding-bottom: 32px;
-        }
-
-         @media screen and (min-width: 768px) {
-            padding-top: 14px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            padding-top: 45px;
-        }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 349px;
     }
 
-    &__title {
-        width: 247px;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      height: 591px;
+    }
+  }
 
-        font-family: 'Seymour One', sans-serif;
-        font-size: 26px;
-        line-height: calc(33 / 26);
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+  &__title-number {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
 
-        display: block;
-
-        color: $color-white-secondary;
-
-        @media screen and (min-width: 1200px) {
-            width: 367px;
-
-            font-size: 38px;
-            line-height: calc(48 / 38);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-
-            color: $color-white-secondary;
-        }
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 32px;
     }
 
-    &-number__list {
-        @extend%list;
-        display: block;
-        margin-right: 0;
-        text-align: end;
-
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
+    @media screen and (min-width: 768px) {
+      padding-top: 14px;
     }
 
-    &-number__item {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        font-size: 28px;
-        line-height: calc(34 / 28);
-        letter-spacing: 0.04em;
+    @media screen and (min-width: 1200px) {
+      padding-top: 45px;
+    }
+  }
 
-        color: $color-black-primary;
+  &__title {
+    width: 247px;
 
-        @media screen and (min-width: 1200px) {
-            font-size: 46px;
-            line-height: calc(56 / 46);
-           
-            letter-spacing: 0.04em;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 26px;
+    line-height: calc(33 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-            color: $color-black-primary;
+    display: block;
 
-        }
+    color: $color-white-secondary;
+
+    @media screen and (min-width: 1200px) {
+      width: 367px;
+
+      font-size: 38px;
+      line-height: calc(48 / 38);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: $color-white-secondary;
+    }
+  }
+
+  &-number__list {
+    @extend%list;
+    display: block;
+    margin-right: 0;
+    text-align: end;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-number__item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    letter-spacing: 0.04em;
+
+    color: $color-black-primary;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: calc(56 / 46);
+
+      letter-spacing: 0.04em;
+
+      color: $color-black-primary;
+    }
+  }
+
+  &-number__item:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-number__text {
+    margin-top: 4px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+
+    color: #fcfcfc;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+
+      color: $color-white-secondary;
+    }
+  }
+
+  &__btn {
+    @extend%btn-secondary;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      width: 134px;
+    }
+  }
+
+  &__list {
+    @extend%list;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__products-lorem {
+    display: block;
+  }
+
+  &__link {
+    @extend%link;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    margin-left: 12px;
+
+    text-decoration-line: underline;
+
+    color: $color-accent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $color-button-hover;
     }
 
-    &-number__item:not(:last-child) {
-        margin-bottom: 20px;
-
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 16px;
-        }
+    &:focus {
+      color: $color-white-primary;
     }
 
-    &-number__text {
-        margin-top: 4px;
-
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: calc(10 / 8);
-
-        color: #FCFCFC;
-
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            line-height: calc(17 / 14);
-
-            color: $color-white-secondary;
-        }
+    &:disabled {
+      color: #ababab;
     }
 
-    &__btn {
-        @extend%btn-secondary;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
 
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            line-height: calc(18 / 14);
-            width: 134px;
-        }
+  &__lorem {
+    width: 139px;
+    margin-top: 39px;
+    margin-left: 196px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    color: $color-white-secondary;
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
 
-    &__list {
-        @extend%list;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+    @media screen and (min-width: 1200px) {
+      width: 200px;
+      margin-top: 111px;
+      margin-left: 257px;
+
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+
+  &-lorem__btn {
+    fill: $color-white-primary;
+    background-color: $bgcolor-primary;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 12px;
     }
 
-    &__products-lorem {
-        display: block;
+    @media screen and (min-width: 1200px) {
+      margin-top: 24px;
+    }
+  }
+
+  &__plate-image {
+    position: absolute;
+
+    @media screen and (max-width: 768px) {
+      display: none;
     }
 
-    &__link {
-        @extend%link;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: calc(15 / 12);
-        margin-left: 12px;
-
-        text-decoration-line: underline;
-
-        color: $color-accent;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover {
-            color: $color-button-hover;
-        }
-
-        &:focus {
-            color: $color-white-primary;
-        }
-
-        &:disabled {
-            color: #ABABAB;
-        }
-
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            line-height: calc(17 / 14);
-        }
+    @media screen and (min-width: 768px) {
+      width: 152px;
+      bottom: 12px;
+      left: 32px;
     }
 
-    &__lorem {
-        width: 139px;
-        margin-top: 39px;
-        margin-left: 196px;
-
-        font-size: 12px;
-        line-height: calc(14 / 12);
-
-        color: $color-white-secondary;
-
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 200px;
-            margin-top: 111px;
-            margin-left: 257px;
-
-            font-size: 14px;
-            line-height: 140%;
-        }
+    @media screen and (min-width: 1200px) {
+      bottom: 65px;
+      left: 16px;
+      width: 225px;
     }
-    
-    &-lorem__btn {
-        fill: $color-white-primary;
-        background-color:  $bgcolor-primary;
-        border: none;
+  }
 
-        @media screen and (min-width: 768px) {
-            margin-top: 12px;
-        }
+  &__dots-image {
+    position: absolute;
 
-        @media screen and (min-width: 1200px) {
-            margin-top: 24px;
-        }
+    @media screen and (min-width: 768px) {
+      display: none;
     }
 
-    &__plate-image {
-        position: absolute;
+    @media screen and (min-width: 1200px) {
+      bottom: 0;
+      left: 16px;
+      width: 1200px;
+    }
+  }
 
-        @media screen and (max-width: 768px) {
-        display: none;
-        }
+  &__ice-cream-image {
+    position: absolute;
+    width: 177px;
+    left: 83px;
+    bottom: 0;
 
-        @media screen and (min-width: 768px) {
-            width: 152px;
-            bottom: 12px;
-            left: 32px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            bottom: 65px;
-            left: 16px;
-            width: 225px;
-        }
+    @media screen and (min-width: 480px) {
+      width: 218px;
+      left: 242px;
     }
 
-    &__dots-image {
-        position: absolute;
-
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
-
-        @media screen and (min-width: 1200px) {
-            bottom: 0;
-            left: 16px;
-            width: 1200px;
-        }
+    @media screen and (min-width: 768px) {
+      left: 408px;
+      width: 268px;
     }
 
-    &__ice-cream-image {
-        position: absolute;
-        width: 177px;
-        left: 83px;
-        bottom: 0;
+    @media screen and (min-width: 1200px) {
+      left: 652px;
+      width: 456px;
+    }
+  }
 
-        @media screen and (min-width: 480px) {
-            width: 218px;
-            left: 242px;
-        }
+  &__dots-left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 106px;
 
-        @media screen and (min-width: 768px) {
-            left: 408px;
-            width: 268px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            left: 652px;
-            width: 456px;
-
-        }
+    @media screen and (min-width: 480px) {
+      left: 159px;
+      width: 110px;
     }
 
-    &__dots-left-image {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 106px;
-
-        @media screen and (min-width: 480px) {
-            left: 159px;
-            width: 110px;
-        }
-
-        @media screen and (min-width: 768px) {
-            left: 0;
-            width: 110px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            display: none;
-
-        }
+    @media screen and (min-width: 768px) {
+      left: 0;
+      width: 110px;
     }
 
-    &__dots-right-image {
-        position: absolute;
-        width: 126px;
-        right: 0;
-        bottom: 0;  
-
-        @media screen and (min-width: 480px) {
-            width: 130px;
-        }
-
-        @media screen and (min-width: 768px) {
-            width: 182px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            display: none;
-
-        }
+    @media screen and (min-width: 1200px) {
+      display: none;
     }
+  }
+
+  &__dots-right-image {
+    position: absolute;
+    width: 126px;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 480px) {
+      width: 130px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 182px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
+  .hero__dots-right-image {
+    background-image: url('/src/images/hero/ice-cream-dots-right-480.png');
+  }
+
+  @media screen and (min-resolution: 2dppx) {
     .hero__dots-right-image {
-        background-image: url('../images/hero/ice-cream-dots-right-480.png');
+      background-image: url('/src/images/hero/ice-cream-dots-right-480@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__dots-right-image {background-image: url('../images/hero/ice-cream-dots-right-480@2x.png');
-        }
-    }
+  .hero__dots-left-image {
+    background-image: url('/src/images/hero/ice-cream-dots-left-480.png');
+  }
 
+  @media screen and (min-resolution: 2dppx) {
     .hero__dots-left-image {
-        background-image: url('../images/hero/ice-cream-dots-left-480.png');
+      background-image: url('/src/images/hero/ice-cream-dots-left-480@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__dots-left-image {background-image: url('../images/hero/ice-cream-dots-left-480@2x.png');
-        }
-    }
+  .hero__ice-cream-image {
+    background-image: url('/src/images/hero/ice-cream-mob-480.png');
+  }
 
+  @media screen and (min-resolution: 2dppx) {
     .hero__ice-cream-image {
-        background-image: url('../images/hero/ice-cream-mob-480.png');
+      background-image: url('/src/images/hero/ice-cream-mob-480@2x.png');
     }
-
-    @media screen and (min-resolution: 2dppx) {
-        .hero__ice-cream-image {background-image: url('../images/hero/ice-cream-mob-480@2x.png');
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .hero__dots-right-image {
+    background-image: url('/src/images/hero/ice-cream-dots-right-768.png');
+  }
+
+  @media screen and (min-resolution: 2dppx) {
     .hero__dots-right-image {
-        background-image: url('../images/hero/ice-cream-dots-right-768.png');
+      background-image: url('/src/images/hero/ice-cream-dots-right-768@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__dots-right-image {background-image: url('../images/hero/ice-cream-dots-right-768@2x.png');
-        }
-    }
+  .hero__dots-left-image {
+    background-image: url('/src/images/hero/ice-cream-dots-left-768.png');
+  }
 
+  @media screen and (min-resolution: 2dppx) {
     .hero__dots-left-image {
-        background-image: url('../images/hero/ice-cream-dots-left-768.png');
+      background-image: url('/src/images/hero/ice-cream-dots-left-768@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__dots-left-image {background-image: url('../images/hero/ice-cream-dots-left-768@2x.png');
-        }
-    }
+  .hero__ice-cream-image {
+    background-image: url('/src/images/hero/ice-cream-tab.png');
+  }
 
+  @media screen and (min-resolution: 2dppx) {
     .hero__ice-cream-image {
-        background-image: url('../images/hero/ice-cream-tab.png');
+      background-image: url('/src/images/hero/ice-cream-tab@2x.png');
     }
-
-    @media screen and (min-resolution: 2dppx) {
-        .hero__ice-cream-image {background-image: url('../images/hero/ice-cream-tab@2x.png');
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__dots-image {
+    background-image: url('/src/images/hero/ice-cream-dots-desktop.png');
+  }
+
+  @media screen and (min-resolution: 2dppx) {
     .hero__dots-image {
-        background-image: url('../images/hero/ice-cream-dots-desktop.png');
+      background-image: url('/src/images/hero/ice-cream-dots-desktop@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__dots-image {background-image: url('../images/hero/ice-cream-dots-desktop@2x.png');
-        }
-    }
+  .hero__plate-image {
+    background-image: url('/src/images/hero/hero-plate-desktop.png');
+  }
 
+  @media screen and (min-resolution: 2dppx) {
     .hero__plate-image {
-        background-image: url('../images/hero/hero-plate-desktop.png');
+      background-image: url('/src/images/hero/hero-plate-desktop@2x.png');
     }
+  }
 
-    @media screen and (min-resolution: 2dppx) {
-        .hero__plate-image {background-image: url('../images/hero/hero-plate-desktop@2x.png');
-        }
-    }
+  .hero__ice-cream-image {
+    background-image: url('/src/images/hero/ice-cream-desktop.png');
+  }
 
-    .hero__ice-cream-image {
-        background-image: url('../images/hero/ice-cream-desktop.png');
+  @media screen and (min-resolution: 2dppx) {
+    .ice-cream-image {
+      background-image: url('/src/images/hero/ice-cream-desktop@2x.png');
     }
-
-    @media screen and (min-resolution: 2dppx) {
-        .ice-cream-image {background-image: url('../images/hero/ice-cream-desktop@2x.png');
-        }
-    }
+  }
 }
