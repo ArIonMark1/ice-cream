@@ -364,15 +364,6 @@
         }
     }
 
-    .hero__plate-image {
-        background-image: url('../images/hero/hero-plate.png');
-    }
-
-    @media screen and (min-resolution: 2dppx) {
-        .hero__plate-image {background-image: url('../images/hero/hero-plate@2x.png');
-        }
-    }
-
     .hero__ice-cream-image {
         background-image: url('../images/hero/ice-cream-tab.png');
     }

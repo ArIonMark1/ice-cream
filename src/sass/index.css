@@ -1094,16 +1094,6 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__plate-image {
-    background-image: url("../images/hero/hero-plate.png");
-  }
-}
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__plate-image {
-    background-image: url("../images/hero/hero-plate@2x.png");
-  }
-}
-@media screen and (min-width: 768px) {
   .hero__ice-cream-image {
     background-image: url("../images/hero/ice-cream-tab.png");
   }
