@@ -551,10 +551,24 @@
 .products__ing-list {
   @extend %list;
   margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 11px;
 }
 
-.products__ing-item {}
+.products__ing-item {
+    @include font(14, 400, 25, 0.04);
 
+    &:nth-child(2n+1){
+      flex-basis:70%;
+      text-align: left;
+    }
+
+    &:nth-child(2n+2) {
+      flex-basis: 30%;
+      text-align: right;
+    }
+}
 
 
 .products__input input {
