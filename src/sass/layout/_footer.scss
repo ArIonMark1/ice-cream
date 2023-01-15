@@ -1,0 +1,164 @@
+.footer__container {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    @include mobile {
+        padding-bottom: 24px;}
+    @include tablet{
+        padding-top: 40px;
+        padding-bottom: 12px;}
+    @include desktop {
+        padding-top: 120px;}
+}
+
+.footer__headlines {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    @include mobile {
+        display: block;}
+    @include tablet{
+        display: inline-block;
+        position: absolute;
+        margin-bottom: 32px;}
+    @include desktop{ 
+        margin-bottom: 60px;
+    }   
+}
+.footer__title {
+    @include font(18,700,22);
+    text-transform: uppercase;
+    color: $color-white-secondary;
+    margin-bottom: 16px;
+    max-width: 232px;
+    max-height: 42px;
+    @include tablet {
+        @include font(26,700,32,0.04);
+        margin-bottom: 8px;
+        max-width: 352px;
+        max-height: 57px;}
+    @include desktop {
+        @include font(30,400,37,0.04);
+        max-width: 504px;
+        max-height: 37px;
+        margin-bottom: 14px;}
+}
+
+.footer__subtitle {
+    @include font(34,700,41,0.04);
+    text-transform: uppercase;
+    color: $color-white-secondary;
+    max-width: 200px;
+    max-height: 76px;
+    @include tablet {
+        @include font(48,700,59,0.06);
+        max-width: 352px;
+        max-height: 118px;}
+    @include desktop {
+        @include font(57.6,700,71,0.06);
+        max-width: 497px;
+        max-height: 71px;
+    }
+}
+
+.footer__list {
+    @extend %list;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__item {
+    &:not(:last-child){
+        margin-right: 20px;}
+        @include tablet{
+        margin-top: 61px;}
+        @include desktop{
+            margin-top: 18px;}
+}
+
+.footer__link, .footer__tel {
+    @extend %link
+}
+
+.footer__link {
+    width: 34px;
+    height: 34px; 
+    padding: 7px;
+    border-radius: 50%;
+    @include centerdFlex();
+    background-color: $color-accent;
+    color: #84A178;
+    transition: gettransition (background-color),
+                gettransition (color);
+        &:hover,&:focus {
+        background-color: $color-accent;
+        border-radius: 50%;
+        color: $color-white-secondary;}
+}
+
+
+.footer__contact {
+    @include font(12,700,22); 
+    text-align: right;
+    color: $color-black-primary;
+    margin-right: 5px;
+    @include tablet{
+    @include font(14,700,26, 0.02);}
+    @include desktop {
+        @include font(12,700,22,0.02);}
+}
+.footer__tel {
+    display: flex;
+    justify-content: flex-end;
+    @include font(12,700,22); 
+    text-align: right;
+    color: $color-white-secondary;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    @include tablet{
+        padding-top: 20px;
+        margin-top: 14px;
+        margin-bottom: 40px;
+        margin-bottom: 0px;
+        @include font(14,700,26, 0.02);}
+    @include desktop {
+        @include font(16,700,30,0.02);
+        margin-bottom: 40px;
+        margin-top: 20px;}
+}
+.footer__bottom::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 320px;
+    height: 1px;
+    background-color:#E1E1E1;
+    @include mobile{width: 480px;};
+    @include tablet{width: 768px;};
+    @include desktop{
+        width: 1167px;
+        left: 17;
+        right: 16;};
+}
+.footer__bill {
+    @extend %list;
+    padding-top: 20px;
+    @include tablet {
+        padding-top: 12px;
+        display:flex;
+        justify-content: center;
+}   
+}
+.footer__copyright {
+    @include font(14,700,21); 
+    text-align: center;
+    color: $color-black-light;
+    @include tablet {
+        @include font(14,700,26,0.02);}
+    @include desktop {
+        @include font(12,700,22,0.02);
+    }
+}
