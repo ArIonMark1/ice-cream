@@ -239,7 +239,20 @@
   &__plate-image {
     position: absolute;
 
-    
+    animation-name: blinking;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    @keyframes blinking {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -277,6 +290,28 @@
     width: 177px;
     left: 83px;
     bottom: 0;
+
+    animation-name: rotate;
+    animation-duration: 0.9s;
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }  
+
+    @keyframes blinking {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
 
     @media screen and (min-width: 480px) {
       width: 218px;
