@@ -1,7 +1,6 @@
 .products {
-  max-width: 1600px;
-
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-image: url(../images/products/backgroud_mobile.jpg);
   background-size: cover;
@@ -12,7 +11,9 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/products/backgroud_mobile_2x.jpg);
+    & {
+      background-image: url(../images/products/backgroud_mobile_2x.jpg);
+    }
   }
 
   @include tablet {
@@ -20,17 +21,22 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/background_tablet_2x.jpg);
+      & {
+        background-image: url(../images/products/background_tablet_2x.jpg);
+      }
     }
   }
 
   @include desktop {
+    max-width: 1300px;
     background-image: url(../images/products/backgroud_desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/backgroud_desktop_2x.jpg);
+      & {
+        background-image: url(../images/products/backgroud_desktop_2x.jpg);
+      }
     }
   }
 }
