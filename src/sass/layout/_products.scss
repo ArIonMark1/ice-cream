@@ -134,11 +134,7 @@
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 1;
-
-            @include tablet {
-                transform: translate(-50%, -61%);
-            }
+            z-index: 1;            
         
             content: "";
             width: 200px;
@@ -153,6 +149,22 @@
                 (min-resolution: 2dppx) {
                     background-image: url(../images/products/ice-cream11-2x.jpg);
                 }
+
+            @include tablet {
+                transform: translate(-50%, -61%);
+            }
+
+            @include desktop {
+                width: 302px;
+                height: 302px;
+                background-image: url(../images/products/ice-cream11-desktop.jpg);
+
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products/ice-cream11-desktop-2x.jpg);
+                    }
+            }
         }
 
         &::after {
@@ -174,6 +186,12 @@
                 @include tablet {
                     transform: translate(-50%, -55%);
                 }
+
+                @include desktop {
+                    width: 302px;
+                    height: 302px;
+                    transform: translate(-50%, -55.6%);
+                }
             }
     }
 
@@ -186,11 +204,7 @@
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 1;
-
-            @include tablet {
-                    transform: translate(-50%, -61%);
-            }
+            z-index: 1;            
 
             content: "";
             width: 200px;
@@ -204,6 +218,22 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../images/products/ice-coffee11-2x.jpg);
+            }
+
+            @include tablet {
+                transform: translate(-50%, -61%);
+            }
+
+            @include desktop {
+                width: 302px;
+                height: 302px;
+                background-image: url(../images/products/ice-coffee11-desktop.jpg);
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/products/ice-coffee11-desktop-2x.jpg);
+                }
             }
         }
 
@@ -224,6 +254,12 @@
             @include tablet {
                     transform: translate(-50%, -55%);
             }
+
+            @include desktop {
+                width: 302px;
+                height: 302px;
+                transform: translate(-50%, -55.6%);
+            }
         }
     }
 
@@ -236,11 +272,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 1;
-
-                @include tablet {
-                        transform: translate(-50%, -61%);
-                }
-    
+                   
                 content: "";
                 width: 200px;
                 height: 200px;
@@ -253,6 +285,22 @@
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: url(../images/products/milkshakes11-2x.jpg);
+                }
+
+                @include tablet {
+                    transform: translate(-50%, -61%);
+                }
+
+                @include desktop {
+                    width: 302px;
+                    height: 302px;
+                    background-image: url(../images/products/milkshakes11-desktop.jpg);
+
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(../images/products/milkshakes11-desktop-2x.jpg);
+                    }
                 }
             }
     
@@ -272,6 +320,12 @@
 
                 @include tablet {
                         transform: translate(-50%, -55%);
+                }
+
+                @include desktop {
+                    width: 302px;
+                    height: 302px;
+                    transform: translate(-50%, -55.6%);
                 }
             }
         }
