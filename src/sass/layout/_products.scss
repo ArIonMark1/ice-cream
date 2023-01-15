@@ -403,7 +403,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: #ffff;
+  background-color: $bgcolor-primary-light;
   z-index: 3;
 }
 
@@ -602,22 +602,32 @@
 
 .modal-close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 30px;
-  height: 30px;
-  border: 1px solid black;
-  background-color: white;
+  width: 20px;
+  height: 20px;
+  
+  background-color: transparent;
+  border: none;
   border-radius: 50%;
-  color: black;
+  color: $color-black-primary;
+
+  &:hover, &:focus{
+    
+    background-color: $color-button-hover;
+  }
 
 }
 
 .modal-close-icon {
   fill: currentColor;
+}
+
+.products_submit-btn{
+@extend %btn-primary;
 }
