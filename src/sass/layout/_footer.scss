@@ -1,4 +1,4 @@
-.footer__container {
+.footer {
     padding-top: 60px;
     padding-bottom: 20px;
     @include mobile {
@@ -7,27 +7,20 @@
         padding-top: 40px;
         padding-bottom: 12px;}
     @include desktop {
-        padding-top: 120px;
-        position: absolute;}
+        padding-top: 120px;}
 }
+
 .footer__top {
     margin-bottom: 20px; 
     @include tablet{
-        display: block;
         margin-bottom: 40px;}
         @include desktop {
             margin-bottom: 40px;}
 }    
 
 .footer__headlines {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     margin-bottom: 60px;
-    @include mobile {
-        display: block;}
     @include tablet{
-        display: inline-block;
         position: absolute;
         margin-bottom: 32px;}
     @include desktop{ 
@@ -40,16 +33,13 @@
     color: $color-white-secondary;
     margin-bottom: 16px;
     max-width: 232px;
-    max-height: 42px;
     @include tablet {
         @include font(26,700,32,0.04);
         margin-bottom: 8px;
-        max-width: 352px;
-        max-height: 57px;}
+        max-width: 352px;}
     @include desktop {
         @include font(30,400,37,0.04);
         max-width: 504px;
-        max-height: 37px;
         margin-bottom: 14px;}
 }
 
@@ -58,25 +48,14 @@
     text-transform: uppercase;
     color: $color-white-secondary;
     max-width: 200px;
-    max-height: 76px;
     @include tablet {
         @include font(48,700,59,0.06);
-        max-width: 352px;
-        max-height: 118px;}
+        max-width: 352px;}
     @include desktop {
         @include font(57.69,700,71,0.06);
         max-width: 497px;
-        max-height: 71px;
     }}
-.footer__social {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    @include mobile{
-        display: block;}
-}
     
-
 .footer__network {
     display: flex;
     justify-content: flex-end;
@@ -128,7 +107,6 @@
 
 .footer__contact {
     @include font(12,700,22); 
-    text-align: right;
     color: $color-black-primary;
     margin-right: 5px;
     @include tablet{
@@ -139,7 +117,6 @@
 
 .footer__tel {
     @include font(12,700,22); 
-    text-align: right;
     color: $color-white-secondary;
     padding-top: 10px;
     padding-bottom: 20px; 
