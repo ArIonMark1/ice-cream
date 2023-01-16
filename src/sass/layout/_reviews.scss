@@ -1,0 +1,40 @@
+.reviews {
+    padding-top: 178px;
+    padding-bottom: 393px;
+    background-image: url(../images/reviews/reviews-bg-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+     @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-mob-2x.jpg);
+            };
+    }
+
+    @include tablet {
+        background-image: url(../images/reviews/reviews-bg-tablet-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-tablet-2x.jpg);
+            };
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/reviews/reviews-bg-desk-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-desk-2x.jpg);
+            };
+        }
+    }
+}
