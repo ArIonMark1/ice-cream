@@ -7,7 +7,7 @@
                 <h2 class="products__title">ice cream</h2>
                 <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
                     natural stabilizer</p>
-                <button type="button" class="products__button" prod-data-modal-open>
+                <button type="button" class="products__button" data-modal-open-prod1>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -17,7 +17,7 @@
                 <h2 class="products__title">ice coffee</h2>
                 <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients
                     without the use of preservatives and flavor enhancers</p>
-                <button type="button" class="products__button" prod-data-modal-open>
+                <button type="button" class="products__button" data-modal-open-prod2>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -27,7 +27,7 @@
                 <h2 class="products__title">milkshakes</h2>
                 <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups,
                     fruits, berries and other sweets of your choice</p>
-                <button type="button" class="products__button" prod-data-modal-open>
+                <button type="button" class="products__button" data-modal-open-prod3>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -40,7 +40,7 @@
 
     <!-------------Modal window About products-------------------->
     
-    <div class="products__backdrop is-hidden" prod-data-modal>
+    <div class="products__backdrop is-hidden" data-modal-prod1>
         <div class="products__modal">
             <p class="products__modal-header">Chocolate icecream</p>
     
@@ -85,7 +85,7 @@
             </form>
     
     
-            <button type="button" class="products__close-btn" prod-data-modal-close>
+            <button type="button" class="products__close-btn" data-modal-close-prod1>
                 <svg class="modal-close-icon" width="30" height="30">
                     <use href="/src/images/svg/icon.svg#icon-close_button_cross"></use>
                 </svg>
@@ -93,8 +93,113 @@
     
         </div>
     </div>
-</section>
+
+    <div class="products__backdrop is-hidden" data-modal-prod2>
+        <div class="products__modal">
+            <p class="products__modal-header">Chocolate icecream</p>
+
+            <ul class="products_comp-list">
+                <li class="products__comp">kcal</li>
+                <li class="products__comp">Prote..</li>
+                <li class="products__comp">Fats</li>
+                <li class="products__comp">Carbs</li>
+            </ul>
+
+            <p class="products__ing-hearder">Ingredients</p>
+            <ul class="products__ing-list">
+                <li class="products__ing-item">Milk</li>
+                <li class="products__ing-item">100ml</li>
+                <li class="products__ing-item">Belgian chocolate</li>
+                <li class="products__ing-item">20g</li>
+                <li class="products__ing-item">Cream</li>
+                <li class="products__ing-item">150 ml</li>
+                <li class="products__ing-item">Cocoa powder</li>
+                <li class="products__ing-item">30g</li>
+                <li class="products__ing-item">Sugar</li>
+                <li class="products__ing-item">40g</li>
+                <li class="products__ing-item">Vanilla sugar</li>
+                <li class="products__ing-item">10g</li>
+            </ul>
+
+            <form class="products__form">
+                <div class="products__input">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+
+                <div class="products__input">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone">
+                </div>
+
+                <div class="products__textarea">
+                    <textarea name="comments" id="comments" placeholder="Comment"></textarea>
+                </div>
+
+                <button type="submit" class="products_submit-btn"> Submit</button>
+
+            </form>
 
 
+            <button type="button" class="products__close-btn" data-modal-close-prod2>
+                <svg class="modal-close-icon" width="30" height="30">
+                    <use href="/src/images/svg/icon.svg#icon-close_button_cross"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="products__backdrop is-hidden" data-modal-prod3>
+        <div class="products__modal">
+            <p class="products__modal-header">Chocolate icecream</p>
     
-<script src="/src/js/products-modal.js"></script>
+            <ul class="products_comp-list">
+                <li class="products__comp">kcal</li>
+                <li class="products__comp">Prote..</li>
+                <li class="products__comp">Fats</li>
+                <li class="products__comp">Carbs</li>
+            </ul>
+    
+            <p class="products__ing-hearder">Ingredients</p>
+            <ul class="products__ing-list">
+                <li class="products__ing-item">Milk</li>
+                <li class="products__ing-item">100ml</li>
+                <li class="products__ing-item">Belgian chocolate</li>
+                <li class="products__ing-item">20g</li>
+                <li class="products__ing-item">Cream</li>
+                <li class="products__ing-item">150 ml</li>
+                <li class="products__ing-item">Cocoa powder</li>
+                <li class="products__ing-item">30g</li>
+                <li class="products__ing-item">Sugar</li>
+                <li class="products__ing-item">40g</li>
+                <li class="products__ing-item">Vanilla sugar</li>
+                <li class="products__ing-item">10g</li>
+            </ul>
+    
+            <form class="products__form">
+                <div class="products__input">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+    
+                <div class="products__input">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone">
+                </div>
+    
+                <div class="products__textarea">
+                    <textarea name="comments" id="comments" placeholder="Comment"></textarea>
+                </div>
+    
+                <button type="submit" class="products_submit-btn"> Submit</button>
+    
+            </form>
+    
+    
+            <button type="button" class="products__close-btn" data-modal-close-prod3>
+                <svg class="modal-close-icon" width="30" height="30">
+                    <use href="/src/images/svg/icon.svg#icon-close_button_cross"></use>
+                </svg>
+            </button>
+    
+        </div>
+    </div>
+
+</section>
