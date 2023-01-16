@@ -87,7 +87,7 @@
     @include centerdFlex();
     background-color: $color-accent;
     fill: #84A178;
-    transition: gettransition (fill);
+    transition: fill $duration $cubic;
         &:hover,&:focus {
         border-radius: 50%;
         fill: $color-white-secondary;}
