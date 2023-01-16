@@ -1,0 +1,255 @@
+.menu {
+    display: none;
+}
+
+.header-btn {
+    display: none;
+}
+
+.mobile-menu__close-btn {
+    display: none;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 12px;
+    background-color: #84A278;
+}
+
+.list {
+    @extend %list;
+}
+
+.menu__link {
+    @extend %link;
+}
+
+.logo {
+    display: flex;
+    padding-top: 12px;
+}
+
+.mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding-top: 17px;
+    line-height: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        padding-top: 14px;
+    }
+
+    .mobile-menu-open {
+        padding-top: 14px;
+    }
+}
+
+// ========== від 768 ========
+
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 20px;
+    }
+
+    .header-btn {
+        display: block;
+        //        @extend %btn-primary;
+        padding: 12px 34px;
+        
+        font-family: inherit;
+        @include font(14, 600, 18, 0);
+        
+        text-align: center;
+        
+        border-radius: $border-radius-btn-primary;
+        border: none;
+        
+        background-color: $color-accent;
+        color: $color-black-primary;
+        
+        cursor: pointer;
+        
+        transition: gettransition(background-color), gettransition(color);
+        
+        &:hover {
+            background-color: $color-button-hover;
+        }
+        
+            &:focus {
+                color: $color-white-primary;
+            }
+
+        width: 152px;
+        height: 42px;
+        margin-top: 28px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-open {
+        padding: 29px 0px 0px 0px;
+    }
+
+    .header-container__btn {
+        display: flex;
+        gap: 32px;
+    }
+    .modal-btn__icon {
+        margin-left: 4px;
+       
+    }
+}
+
+// ========== від 1200 ========
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        padding-top: 8px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: flex-end;
+        gap: 28px;
+        margin-bottom: 13px;
+
+    }
+
+    .menu__link {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        display: flex;
+        align-items: center;
+
+        color: var(--color-white-secondary);
+    }
+
+    .menu__link:hover,
+    .menu__link:focus {
+        color: #F8D24E;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+
+        gap: 308px;
+    }
+}
+
+
+// // ========== mobile-menu ========
+
+
+.mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    
+    background-color: #85A279;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 16 0;
+
+    .container {
+        display: block;
+        height: 100%;
+    }
+
+}
+
+.modile-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    padding-top: 0;
+}
+
+.menu-close {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    padding: 0;
+}
+
+.mobile__list {
+    @extend %list;
+}
+
+.mobile__list-link:hover,
+.mobile__list-link:focus {
+    color: #131313;
+}
+
+
+.mobile__list-link {
+    @extend %link;
+    @include font(32, 700, 39, 0);
+    color: var(--color-white-secondary);
+
+}
+
+.mobile__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+ 
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 110px;
+}
+
+.mobile-btn {
+    display: block;
+    @extend %btn-primary; 
+
+    width: 152px;
+    height: 42px;
+    margin-top: 28px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 100vh;
+}
+
+// ========== від 768 ========
+
+@media screen and (min-width: 768px) {
+    .mobile-btn {
+        display: none;
+    }
+
+    .mobile__list-link {
+        @include font(48, 700, 58, 0);  
+    }
+
+}
