@@ -1,154 +1,152 @@
-<section class="modal">
-  <div class="modal__container">
-    <h1>Modal window</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, qui?
-    </p>
-    <ul class="content">
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-cow"></use>
-        </svg>
-        <p>Cow</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-facebook"></use>
-        </svg>
-        <p>Facebook</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-github"></use>
-        </svg>
-        <p>GitHub</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-icecream"></use>
-        </svg>
-        <p>IceCream</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-large_arrow"></use>
-        </svg>
-        <p>Large Arrow</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-small_arrow"></use>
-        </svg>
-        <p>Small Arrow</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-telegram"></use>
-        </svg>
-        <p>Telegram</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-weight"></use>
-        </svg>
-        <p>Weight</p>
-      </li>
-      <li>
-        <svg class="icons" width="30," height="30">
-          <use href="images/gallery/svg/icon.svg#icon-close_button_cross"></use>
-        </svg>
-        <p>Cross</p>
-      </li>
-    </ul>
-    <button
-      type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      class="activeButton js-open-menu"
-    >
-      Відкрити модалку
-    </button>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>Page title</title>
+    <!-- ################################################## -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-- ################################################## -->
+    <!-- <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script> -->
+  </head>
+  <body>
+    <header></header>
+    <main class="modal">
+      <div class="modal__container">
+        <!-- @@@@@@@@@@@@@@@@@@ Button @@@@@@@@@@@@@@@@@@@@@@ -->
+        <button
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="activeButton js-open-menu"
+        >
+          Відкрити модалку
+        </button>
 
-<section class="overwindow js-menu-container" id="mobile-menu">
-  <!-- ###################################### -->
+        <section class="overwindow js-menu-container" id="mobile-menu">
+          <!-- ###################################### -->
 
-  <div class="modalwindow">
-    <button type="button" class="modalwindow__button js-close-menu">
-      <svg class="modalwindow__image" width="30" height="30">
-        <use href="images/gallery/svg/icon.svg#icon-close_button_cross"></use>
-      </svg>
-    </button>
+          <div class="modalwindow">
+            <button type="button" class="modalwindow__button js-close-menu">
+              <svg class="modalwindow__image" width="30" height="30">
+                <use
+                  href="images/gallery/svg/icon.svg#icon-close_button_cross"
+                ></use>
+              </svg>
+            </button>
 
-    <div class="modalwindow__decor">
-      <!-- Content -->
-      <form class="form" action="test/post/">
-        <!-- <fieldset> -->
-        <legend><h2 class="form__header">Buy now</h2></legend>
+            <!-- Content -->
+            <form class="form">
+              <!-- <fieldset> -->
+              <legend><h3 class="form__header">Buy now</h3></legend>
+              <!-- ################################################# -->
+              <ul class="products">
+                <li class="products__item">
+                  <input
+                    class="products__checkbox"
+                    type="checkbox"
+                    name="product"
+                    id="ice_cream"
+                    value="Ice cream"
+                  />
+                  <label class="products__content" for="ice_cream"
+                    ><span class="products__text">Ice cream</span></label
+                  >
+                </li>
+                <li class="products__item">
+                  <input
+                    class="products__checkbox"
+                    type="checkbox"
+                    name="product"
+                    id="ice_coffee"
+                    value="Ice coffee"
+                  />
+                  <label class="products__content" for="ice_coffee"
+                    ><span class="products__text">Ice coffee</span></label
+                  >
+                </li>
+                <li class="products__item">
+                  <input
+                    class="products__checkbox"
+                    type="checkbox"
+                    name="product"
+                    id="Milkshake"
+                    value="Milkshake"
+                  />
+                  <label class="products__content" for="Milkshake"
+                    ><span class="products__text">Milkshake</span></label
+                  >
+                </li>
+              </ul>
+              <!-- ################################################# -->
+              <!-- </fieldset> -->
+              <div class="fields">
+                <input
+                  class="fields__item"
+                  type="text"
+                  name="user_name"
+                  placeholder="Name"
+                  title="Введіть ваше ім'я"
+                  required
+                />
+                <input
+                  class="fields__item"
+                  type="tel"
+                  name="user_tel"
+                  placeholder="Phone"
+                  pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                  title="+380 (63) 534-78-30"
+                  required
+                />
+                <textarea
+                  class="fields__item textarea"
+                  name="user_comment"
+                  id="user_comment"
+                  rows="4"
+                  placeholder="Comment"
+                  title="Можете залишити ваші побажання"
+                ></textarea>
+              </div>
 
-        <ul class="products">
-          <li class="products__item">
-            <input
-              class="products__checkbox"
-              type="checkbox"
-              name="product"
-              id="ice_cream"
-              value="Ice cream"
-            />
-            <label class="products__content" for="ice_cream">Ice cream</label>
-          </li>
-          <li class="products__item">
-            <input
-              class="products__checkbox"
-              type="checkbox"
-              name="product"
-              id="ice_coffee"
-              value="Ice coffee"
-            />
-            <label class="products__content" for="ice_coffee">Ice coffee</label>
-          </li>
-          <li class="products__item">
-            <input
-              class="products__checkbox"
-              type="checkbox"
-              name="product"
-              id="Milkshake"
-              value="Milkshake"
-            />
-            <label class="products__content" for="Milkshake">Milkshake</label>
-          </li>
-        </ul>
-
-        <!-- </fieldset> -->
-        <input
-          class="form__item"
-          type="text"
-          name="user_name"
-          placeholder="Name"
-        />
-        <input
-          class="form__item"
-          type="tel"
-          name="user_tel"
-          placeholder="Phone"
-        />
-        <textarea
-          class="form__item textarea"
-          name="user_comment"
-          id="user_comment"
-          rows="4"
-          placeholder="Comment"
-        ></textarea>
-        <button class="form__button" type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-</section>
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script src="./js/active_window.js"></script>
+              <button class="form__button" type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    </main>
+    <footer></footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/active_window.js"></script>
+  </body>
+</html>
