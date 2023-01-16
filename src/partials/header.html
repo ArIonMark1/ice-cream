@@ -1,10 +1,12 @@
 <header class="header">
     <div class="nav-contact container">
-        <a href="./index.html" class="logo link">
-            <svg width="44" height="48">
-                <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-        </a>
+        <div class="header__logo">
+            <a href="./index.html" class="logo link">
+                <svg width="48" height="48">
+                    <use href="./images/hero/icons.svg#icon-logo"></use>
+                </svg>
+            </a>    
+        </div>
 
         <nav class="nav">
             <ul class="nav__list list">
@@ -15,36 +17,32 @@
             </ul>
         </nav>        
 
-        <button type="button" class="nav__menu-btn">
+        <button type="button" class="menu-btn">
             <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-eva" class="icon-menu"></use>
+                <use href="./images/hero/icons.svg#icon-eva" class="icon-menu"></use>
             </svg>
         </button>
 
         <button type="button" class="nav__btn">Buy now ></button>
     </div>
-    
-    <div class="mobile-menu container">
-        <div class="menu-content">
-            <a href="./index.html" class="logo link">
-                <svg width="44" height="48">
-                    <use href="./images/icons.svg#icon-logo"></use>
-                </svg>
-            </a>
-            <button type="button" class="menu-close">
-                <svg width="32" height="32">
-                    <use href="./images/icons.svg#icon-close" class="menu-content__close-icon"></use>
-                </svg>
-            </button>
+
+    <div class="mobile-menu">
+        <div class="container">
             
-            <nav class="mob-nav">
+            <div class="menu-content">
+                <div><button type="button" class="menu-close">
+                    <svg width="32" height="32">
+                        <use href="./images/hero/icons.svg#icon-close" class="menu-content__close-icon"></use>
+                    </svg>
+                </button></div>
+                
                 <ul class="mob-nav__list list">
                     <li class="mob-nav__item"><a class="mob-nav__link link" href="./index.html">Home</a></li>
-                    <li class="mob-nav__item"><a class="mob-nav__link mob-pretitle link" href="">How it’s made?</a></li>
-                    <li class="mob-nav__item"><a class="mob-nav__link link" href="">Our products</a></li>
-                    <li class="mob-nav__item"><a class="mob-nav__link link" href="">Contact</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#about">How it’s made?</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#products">Our products</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#contacts">Contact</a></li>
                 </ul>
-                <button type="button" class="mob-nav__btn">Buy now ></button>
-            </nav>       
-        </div>
+            </div>
+        </div> 
     </div>
+</header>  
