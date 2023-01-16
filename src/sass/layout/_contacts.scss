@@ -205,7 +205,6 @@
     font-size: 16px;
   }
 }
-
 .contacts__modal {
   display: flex;
   flex-direction: column;
@@ -224,7 +223,7 @@
   }
 }
 .contacts__modal-item:first-child {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
 }
@@ -233,6 +232,7 @@
   min-width: 196px;
   height: 42px;
   padding: 12px 39px 12px 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     margin-right: 16px;
   }
@@ -248,6 +248,7 @@
  min-width: 196px;
   height: 42px;
   padding: 12px 54px 12px 55px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border: $border-btn-secondary;
