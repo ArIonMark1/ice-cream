@@ -4,7 +4,7 @@
     left:0;
     width: 100%;
     height: 100%;
-    overflow:scroll;
+    
     background-color:rgba(0, 0, 0, 0.2);
     opacity: 1;
     z-index: 90;
@@ -94,21 +94,23 @@
         margin-top: 20px; 
         width: 224px;
         height: 199px;
+        border-radius: 10px;
      
          @include tablet{
         width: 448px;
         height: 205px;
         margin-top: 32px;
+        border-radius: 10px;
          }
         }
 
         .about-btn-close{
             position: absolute;
             cursor: pointer;
-            width: 30px;
-            height: 30px;
-            top: 16px;
-            right: 16px;
+            width: 20px;
+            height: 20px;
+            top: 12px;
+            right: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,5 +123,10 @@
             &:hover,
             &:focus{
             fill:$color-accent;
+             
+            @include tablet{
+                width: 24px;
+                height: 24px;
+            }
         }
         }
