@@ -1,149 +1,64 @@
-<header class="header">
-  <div class="container header-container">
-    <nav class="header__nav">
-      <a class="logo" href="">
-        <picture>
-          <source
-            srcset="
-              /src/images/header/logodesk@1x.png 1x,
-              /src/images/header/logodesk@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-            width="60"
-            height="65"
-          />
-          <source
-            srcset="
-              /src/images/header/logotabl@1x.png 1x,
-              /src/images/header/logotabl@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            width="48"
-            height="44"
-          />
-          <source
-            srcset="
-              /src/images/header/logomob@1x.png 1x,
-              /src/images/header/logomob@2x.png 2x
-            "
-            media="(max-width: 767px)"
-            width="48"
-            height="44"
-          />
-          <img
-            src="/src/images/header/logo.png"
-            alt="логотип сайта"
-            width="60"
-            height="65"
-          />
-        </picture>
-      </a>
-      <ul class="menu list">
-        <li class="menu__item">
-          <a class="menu__link" href="">Home</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">How it’s made?</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">Our products</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-container__btn">
-      <button type="button" class="mobile-menu-open js-open-menu">
-        <svg class="mobail-menu-open_icon" width="32px" height="32px">
-          <use href="/src/images/svg/icon.svg#icon-burger"></use>
-        </svg>
-      </button>
+<header class="header container">
+    <div class="nav-contact">
+        <div class="header__logo">
+            <a href="./index.html" class="logo link">
+                <svg width="48" height="48">
+                    <use href="./images/hero/icons.svg#icon-logo"></use>
+                </svg>
+            </a>    
+        </div>
 
-      <button class="header-btn" type="button" data-modal-open>
-        Buy now
-        <svg class="modal-btn__icon" width="12" height="12">
-          <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
+        <nav class="nav">
+            <ul class="nav__list list">
+                <li class="nav__item"><a class="nav__link link" href="./index.html">Home</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#about">How it’s made?</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#products">Our products</a></li>
+                <li class="nav__item"><a class="nav__link link" href="#contacts">Contact</a></li>
+            </ul>
+        </nav>        
 
-  <div class="mobile-menu none">
-    <div class="modile-logo">
-      <a class="logo" href="">
-        <picture>
-          <source
-            srcset="
-              /src/images/header/logodesk@1x.png 1x,
-              /src/images/header/logodesk@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-            width="60"
-            height="65"
-          />
-          <source
-            srcset="
-              /src/images/header/logotabl@1x.png 1x,
-              /src/images/header/logotabl@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            width="48"
-            height="44"
-          />
-          <source
-            srcset="
-              /src/images/header/logomob@1x.png 1x,
-              /src/images/header/logomob@2x.png 2x
-            "
-            media="(max-width: 767px)"
-            width="48"
-            height="44"
-          />
-          <img
-            src="/src/images/header/logo.png"
-            alt="логотип сайта"
-            width="60"
-            height="65"
-          />
-        </picture>
-      </a>
-
-      <button class="menu-close">
-        <svg class="menu-close-icon js-close-menu" width="32" height="32">
-          <use href="./images/svg/icon.svg#icon-ep_close"></use>
-        </svg>
-      </button>
-    </div>
-
-    <div class="menu-content js-menu-container">
-      <nav class="mobile-nav">
-        <ul class="mobile__list">
-          <li class="mobile__nav-link">
-            <a class="mobile__list-link" href="">Home</a>
-          </li>
-          <li class="mobile__nav-link">
-            <a class="mobile__list-link" href="">How it’s made?</a>
-          </li>
-          <li class="mobile__nav-link">
-            <a class="mobile__list-link" href="">Our products</a>
-          </li>
-          <li class="mobile__nav-link">
-            <a class="mobile__list-link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div>
-        <button class="mobile-btn" type="button" data-modal-open>
-          Buy now
-          <svg class="mobile-btn__icon" width="12" height="12">
-            <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
-          </svg>
+        <button type="button" class="menu-btn" data-menu-open>
+            <svg width="32" height="32">
+                <use href="./images/hero/icons.svg#icon-eva" class="icon-menu"></use>
+            </svg>
         </button>
-      </div>
+
+        <button type="button" class="nav__btn">Buy now 
+            <svg class="nav-btn-icon" width="12" height="12">
+                <use href="./images/svg/icon.svg#icon-small_arrow" class="arrow-icon"></use>
+            </svg>
+        </button>
     </div>
 
-    <script src="/src/js/mobile-menu.js"></script>
-  </div>
-</header>
+    <div class="mobile-menu">
+        <div class="menu-content is-hidden container" data-menu>
+            <div class="mob-content__logo">
+                <a href="./index.html" class="logo link">
+                    <svg width="48" height="48">
+                        <use href="./images/hero/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>    
+                <div><button type="button" class="menu-close" data-menu-close>
+                    <svg width="32" height="32">
+                        <use href="./images/hero/icons.svg#icon-close" class="menu-content__close-icon"></use>
+                    </svg>
+                </button></div>
+            </div>
+            
+            <nav class="mob-nav__content">
+                <ul class="mob-nav__list list">
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="./index.html">Home</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#about">How it’s made?</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#products">Our products</a></li>
+                    <li class="mob-nav__item"><a class="mob-nav__link link" href="#contacts">Contact</a></li>
+                </ul>
+                <button type="button" class="mob-nav__btn">Buy now 
+                    <svg class="nav-btn-icon" width="12" height="12">
+                        <use href="./images/svg/icon.svg#icon-small_arrow" class="arrow-icon"></use>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header>  
+  
