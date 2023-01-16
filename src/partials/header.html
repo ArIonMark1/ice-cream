@@ -1,96 +1,149 @@
 <header class="header">
-    <div class="container header-container">
-        <nav class="header__nav">
-            <a class="logo" href="">
-                <picture>
-                    <source srcset="/src/images/header/logodesk@1x.png 1x,  /src/images/header/logodesk@2x.png 2x"
-                    media="(min-width: 1200px)" width="60" height="65"/>
-                    <source srcset="/src/images/header/logotabl@1x.png 1x,  /src/images/header/logotabl@2x.png 2x"
-                    media="(min-width: 768px)" width="48" height="44"/>
-                    <source srcset="/src/images/header/logomob@1x.png 1x,  /src/images/header/logomob@2x.png 2x"
-                    media="(max-width: 767px)" width="48" height="44"/>
-                    <img src="/src/images/header/logo.png" alt="логотип сайта" width="60" height="65" />
-                </picture>
-            </a>
-            <ul class="menu list">
-                <li class="menu__item">
-                    <a class="menu__link" href="">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">How it’s made?</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">Our products</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-container__btn">
-            <button type="button" class="mobile-menu-open js-open-menu">
-                <svg class="mobail-menu-open_icon" width="32px" height="32px">
-                    <use href="/src/images/svg/icon.svg#icon-burger"></use>
-                </svg>
-            </button>
+  <div class="container header-container">
+    <nav class="header__nav">
+      <a class="logo" href="">
+        <picture>
+          <source
+            srcset="
+              /src/images/header/logodesk@1x.png 1x,
+              /src/images/header/logodesk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            width="60"
+            height="65"
+          />
+          <source
+            srcset="
+              /src/images/header/logotabl@1x.png 1x,
+              /src/images/header/logotabl@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            width="48"
+            height="44"
+          />
+          <source
+            srcset="
+              /src/images/header/logomob@1x.png 1x,
+              /src/images/header/logomob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            width="48"
+            height="44"
+          />
+          <img
+            src="/src/images/header/logo.png"
+            alt="логотип сайта"
+            width="60"
+            height="65"
+          />
+        </picture>
+      </a>
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link" href="">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-container__btn">
+      <button type="button" class="mobile-menu-open js-open-menu">
+        <svg class="mobail-menu-open_icon" width="32px" height="32px">
+          <use href="/src/images/svg/icon.svg#icon-burger"></use>
+        </svg>
+      </button>
 
-            <button class="header-btn" type="button" data-modal-open>Buy now
-                <svg class="modal-btn__icon" width="12" height="12">
-                <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
-            </svg>
-            </button>
-        </div>
+      <button class="header-btn" type="button" data-modal-open>
+        Buy now
+        <svg class="modal-btn__icon" width="12" height="12">
+          <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 
+  <div class="mobile-menu none">
+    <div class="modile-logo">
+      <a class="logo" href="">
+        <picture>
+          <source
+            srcset="
+              /src/images/header/logodesk@1x.png 1x,
+              /src/images/header/logodesk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            width="60"
+            height="65"
+          />
+          <source
+            srcset="
+              /src/images/header/logotabl@1x.png 1x,
+              /src/images/header/logotabl@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            width="48"
+            height="44"
+          />
+          <source
+            srcset="
+              /src/images/header/logomob@1x.png 1x,
+              /src/images/header/logomob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            width="48"
+            height="44"
+          />
+          <img
+            src="/src/images/header/logo.png"
+            alt="логотип сайта"
+            width="60"
+            height="65"
+          />
+        </picture>
+      </a>
+
+      <button class="menu-close">
+        <svg class="menu-close-icon js-close-menu" width="32" height="32">
+          <use href="./images/svg/icon.svg#icon-ep_close"></use>
+        </svg>
+      </button>
     </div>
 
+    <div class="menu-content js-menu-container">
+      <nav class="mobile-nav">
+        <ul class="mobile__list">
+          <li class="mobile__nav-link">
+            <a class="mobile__list-link" href="">Home</a>
+          </li>
+          <li class="mobile__nav-link">
+            <a class="mobile__list-link" href="">How it’s made?</a>
+          </li>
+          <li class="mobile__nav-link">
+            <a class="mobile__list-link" href="">Our products</a>
+          </li>
+          <li class="mobile__nav-link">
+            <a class="mobile__list-link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="mobile-menu">
-            <div class="modile-logo">            
-                <a class="logo" href="">
-                    <picture>
-                        <source srcset="/src/images/header/logodesk@1x.png 1x, /src/images/header/logodesk@2x.png 2x"
-                            media="(min-width: 1200px)" width="60" height="65" />
-                        <source srcset="/src/images/header/logotabl@1x.png 1x, /src/images/header/logotabl@2x.png 2x"
-                            media="(min-width: 768px)" width="48" height="44" />
-                        <source srcset="/src/images/header/logomob@1x.png 1x, /src/images/header/logomob@2x.png 2x"
-                            media="(max-width: 767px)" width="48" height="44" />
-                        <img src="/src/images/header/logo.png" alt="логотип сайта" width="60" height="65" />
-                    </picture>
-                </a>
-           
-                <button class="menu-close">
-                    <svg class="menu-close-icon js-close-menu" width="32" height="32">
-                        <use href="./images/svg/icon.svg#icon-ep_close"></use>
-                    </svg>
-                </button>
-            </div>
+      <div>
+        <button class="mobile-btn" type="button" data-modal-open>
+          Buy now
+          <svg class="mobile-btn__icon" width="12" height="12">
+            <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-
-            <div class="menu-content js-menu-container">
-                <nav class="mobile-nav">
-                    <ul class="mobile__list">
-                        <li class="mobile__nav-link">
-                            <a class="mobile__list-link" href="">Home</a>
-                        </li>
-                        <li class="mobile__nav-link">
-                            <a class="mobile__list-link" href="">How it’s made?</a>
-                        </li>
-                        <li class="mobile__nav-link">
-                            <a class="mobile__list-link" href="">Our products</a>
-                        </li>
-                        <li class="mobile__nav-link">
-                            <a class="mobile__list-link" href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div>
-                    <button class="mobile-btn" type="button" data-modal-open>Buy now
-                        <svg class="mobile-btn__icon" width="12" height="12">
-                            <use href="/src/images/svg/icon.svg#icon-right-bold"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-<script src="/src/js/mobile-menu.js"></script>
+    <script src="/src/js/mobile-menu.js"></script>
+  </div>
+</header>
