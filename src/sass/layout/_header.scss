@@ -131,9 +131,9 @@
     left: 0; 
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 199;
    
-    // background-color: #84A178;
+    background-color: #84A178;
 
     & .container {
         height: 100%;
@@ -146,7 +146,7 @@
 
 .menu-close {
     display: block;
-    margin-left: auto;
+    margin-left: 195px;
     margin-top: 12px;
 
     padding: 10px;
@@ -159,6 +159,14 @@
     &:hover .menu-content__close-icon,
     &:focus  .menu-content__close-icon {
         fill: var(--accent-color);
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-left: 345px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 615px;
     }
 }
 
@@ -231,4 +239,8 @@
         display: none;
     }
 
+}
+
+.mob-content__logo {
+    display: flex;
 }
