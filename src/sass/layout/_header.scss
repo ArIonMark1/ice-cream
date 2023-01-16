@@ -73,6 +73,7 @@
         border: none;
         cursor: pointer;
 
+
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -83,7 +84,7 @@
         &:focus {
             background-color: $color-button-hover;
             color: $color-white-primary;
-            fill: $color-white-primary
+            fill: $color-white-primary;
         }
 
         &:disabled {
@@ -164,9 +165,12 @@
     fill: $color-white-primary;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover .menu-content__close-icon,
-    &:focus  .menu-content__close-icon {
-        fill: var(--accent-color);
+    &:hover {
+        fill: $color-accent;
+    }
+
+    &:focus {
+        fill: $color-accent;
     }
 
     @media screen and (min-width: 480px) {
@@ -175,6 +179,18 @@
 
     @media screen and (min-width: 768px) {
         margin-left: 615px;
+    }
+}
+
+.mob-nav__list {
+    padding-top: 51px;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 76px;
     }
 }
 
