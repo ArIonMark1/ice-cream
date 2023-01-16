@@ -374,6 +374,7 @@
 
   display: block;
   padding: 10px;
+  
 
   cursor: pointer;
   color: $color-black-primary;
@@ -405,6 +406,8 @@
 
   background-color: $bgcolor-primary-light;
   z-index: 3;
+
+  
 }
 
 .is-hidden {
@@ -425,6 +428,11 @@
   background: #FCFCFC;
   border: 2px solid #F8D24E;
   border-radius: 10px;
+
+  @include tablet {
+    width: 568px;
+    padding: 32px 40px;
+  }
 
 }
 
@@ -475,6 +483,10 @@
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
+
+  @include tablet {
+    padding-bottom: 187px;
+  }
 }
 
 .products_comp-list {
@@ -484,6 +496,11 @@
   margin-bottom: 40px;
 
   @extend %list;
+
+  @include tablet {
+      gap: 20px;
+      margin-bottom: 48px;
+    }
 }
 
 .products__comp {
@@ -499,6 +516,12 @@
 
   border: 2px solid #9CBE8F;
   border-radius: 40px;
+
+  @include tablet {
+    width: 65px;
+    height: 90px;
+    @include font(12, 400, 15, 0.04);
+  }
 
   &::before {
     position: absolute;
@@ -520,6 +543,12 @@
     border: 2px solid #9CBE8F;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
+
+    @include tablet {
+      width: 53px;
+      height: 53px;
+      @include font(12, 500, 28, 0.04);
+    }
   }
 
   &:nth-child(1)::before {
@@ -542,9 +571,7 @@
 .products__ing-hearder {
   margin-bottom: 24px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
+  @include font(20, 500, 28, 0.04);
   text-align: center;
 }
 
@@ -554,6 +581,10 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 11px;
+
+  @include tablet {
+      margin-bottom: 48px;
+  }
 }
 
 .products__ing-item {
@@ -574,6 +605,8 @@
 .products__input input {
   width: 100%;
   height: 42px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 16px;
   padding: 11px 10.43px;
 
@@ -581,6 +614,10 @@
   border: 1px solid #84A178;
   border-radius: 10px;
   @include font(14, 400, 20, 0.04);
+
+  @include tablet {
+      width: 368px;
+  }
 }
 
 
@@ -588,6 +625,8 @@
 .products__textarea textarea {
   width: 100%;
   min-height: 84px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 24px;
   padding: 11px 10.43px;
   background: rgba(248, 210, 78, 0.1);
@@ -596,12 +635,21 @@
   @include font(14, 400, 20, 0.04);
   resize: vertical;
 
+  @include tablet {
+      width: 368px;
+      margin-bottom: 32px;
+    }
 }
 
 
+.products_submit-btn {
+  @extend %btn-primary;
+  display: block;
+  margin: 0 auto;
+}
 
 
-.modal-close-btn {
+.products__close-btn {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -617,20 +665,20 @@
   border: none;
   border-radius: 50%;
   color: $color-black-primary;
+  cursor: pointer;
 
   &:hover, &:focus{
-    
     background-color: $color-button-hover;
   }
 
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
+
 
 .modal-close-icon {
   fill: currentColor;
 }
 
-.products_submit-btn{
-  @extend %btn-primary;
-  display: block;
-  margin: 0 auto;
-}

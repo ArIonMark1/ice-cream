@@ -7,7 +7,7 @@
                 <h2 class="products__title">ice cream</h2>
                 <p class="products__description">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
                     natural stabilizer</p>
-                <button type="button" class="products__button">
+                <button type="button" class="products__button" prod-data-modal-open>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -17,7 +17,7 @@
                 <h2 class="products__title">ice coffee</h2>
                 <p class="products__description">Fragrant invigorating drink created from 100% natural ingredients
                     without the use of preservatives and flavor enhancers</p>
-                <button type="button" class="products__button">
+                <button type="button" class="products__button" prod-data-modal-open>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -27,7 +27,7 @@
                 <h2 class="products__title">milkshakes</h2>
                 <p class="products__description">Sweet drinks based on milk and ice cream, supplemented with syrups,
                     fruits, berries and other sweets of your choice</p>
-                <button type="button" class="products__button">
+                <button type="button" class="products__button" prod-data-modal-open>
                     <svg class="products__button-icon" width="40" height="16">
                         <use href="images/products/products-icons.svg#icon-arrow"></use>
                     </svg>
@@ -40,7 +40,7 @@
 
     <!-------------Modal window About products-------------------->
     
-    <div class="products__backdrop is---hidden" data-modal-prod>
+    <div class="products__backdrop is-hidden" prod-data-modal>
         <div class="products__modal">
             <p class="products__modal-header">Chocolate icecream</p>
     
@@ -85,16 +85,16 @@
             </form>
     
     
-            <button type="button" class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-icon" width="50" height="50">
+            <button type="button" class="products__close-btn" prod-data-modal-close>
+                <svg class="modal-close-icon" width="30" height="30">
                     <use href="/src/images/svg/icon.svg#icon-close_button_cross"></use>
                 </svg>
             </button>
     
         </div>
     </div>
-    </section>
-    
-    <!-- <script src="./js/modal.js"></script> -->
-
 </section>
+
+
+    
+<script src="/src/js/products-modal.js"></script>
