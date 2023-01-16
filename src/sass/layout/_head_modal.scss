@@ -1,341 +1,347 @@
 :root {
-    --modal-border: #f8d34e;
-    --ice-color: #84a178d7;
-    --coffee-color: #efd378e7;
-    --milkshake-color: #d6936de7;
-}
-
-.container {
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid red;
-}
-
-.button {
-    cursor: pointer;
-    font-family: inherit;
+  --modal-border: #f8d34e;
+  --ice-color: #84a178d7;
+  --coffee-color: #efd378e7;
+  --milkshake-color: #d6936de7;
 }
 
 .activeButton {
-    @extend .button;
-    margin-top: 20px;
-    padding: 10px 30px;
-    border: none;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border: 1px solid grey;
-    border-radius: 5px;
-    background: #F8D24E;
-    color: #84A178;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: #f8d24e;
+  color: #84a178;
 }
 
 .list {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-.modal {
-    &__container {
-        @extend .container;
-    }
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 // #################
 
 .overwindow {
-    font-family: "Montserrat", "Seymour One", sans-serif;
-    position: fixed;
-    // position: relative;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    padding: 15px;
-    transform: translateX(100%);
-    background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', 'Seymour One', sans-serif;
+  position: fixed;
+  // position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding: 15px;
+  transform: translateX(100%);
+  background-color: rgba(0, 0, 0, 0.5);
 
-    &.is-open {
-        transform: translateX(0);
-    }
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .modalwindow {
-    box-sizing: border-box;
-    position: absolute;
-    width: 568px;
-    padding: 28px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 568px;
+  padding: 28px;
 
-    background: #fff;
-    border: 2px solid var(--modal-border);
-    border-radius: 10px;
+  background: #fff;
+  border: 2px solid var(--modal-border);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 54px;
+    max-width: 568px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    position: absolute;
 
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
 
-    @media screen and (min-width: 768px) {
-        padding: 32px 54px;
-        max-width: 568px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    &__button {
-        @extend .button;
-        position: absolute;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        background-color: transparent;
-
-        right: 5px;
-        top: 5px;
-    }
+    right: 5px;
+    top: 5px;
+  }
 }
 
 .form {
-    box-sizing: border-box;
-    position: relative;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    font-family: 'Seymour One';
+    color: #131313;
+
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 84px;
 
-    &__header {
-        font-family: "Seymour One";
-        color: #131313;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 84px;
-
-        @media screen and (min-width: 480px) {
-            margin-bottom: 104px;
-        }
+    @media screen and (min-width: 480px) {
+      margin-bottom: 104px;
     }
+  }
 
-    &__button {
-        display: flex;
-        align-items: center;
-        text-align: center;
+  &__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
 
-        padding: 12px 34px;
-        background: #F8D24E;
-        border: none;
-        border-radius: 10px;
+    padding: 12px 34px;
+    background: #f8d24e;
+    border: none;
+    border-radius: 10px;
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
 
-        color: #131313;
-    }
+    color: #131313;
+  }
 }
 
 // ########################################
 .products {
-    @extend .list;
-    position: relative;
+  @extend .list;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  // max-width: 100%;
+  gap: 32px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 82px;
+  }
+
+  &__item {
+    height: 135px;
+    width: 132px;
     display: flex;
-    justify-content: space-between;
-    // max-width: 100%;
-    gap: 32px;
-    margin-bottom: 40px;
+    position: relative;
+    flex-direction: column;
+    border-radius: 20px;
 
-    @media screen and (max-width: 480px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 82px;
-    }
+    &:nth-child(1) {
+      // border: 2px solid var(--ice-color);
+      .products__content {
+        border: 1px solid var(--ice-color);
 
-    &__item {
-        height: 135px;
-        width: 132px;
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        border-radius: 20px;
-
-        &:nth-child(1) {
-
-            // border: 2px solid var(--ice-color);
-            .products__content {
-                border: 1px solid var(--ice-color);
-
-                ::before {
-
-                    background-image: url(../images/gallery/head-modal/icecream_2x.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    z-index: 1;
-                }
-
-                ::after {
-                    bottom: 190%;
-                    background-position: top;
-                    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-                    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-                }
-            }
+        ::before {
+          background-image: url(../images/gallery/head-modal/icecream_2x.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 1;
         }
 
-        &:nth-child(2) {
-
-            .products__content {
-                border: 1px solid var(--coffee-color);
-
-                ::before {
-                    background-image: url(../images/gallery/head-modal/icecoffee_2x.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    z-index: 1;
-                }
-
-                ::after {
-                    bottom: 190%;
-                    background-position: top;
-                    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-                    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-                }
-            }
-
-        }
-
-        &:nth-child(3) {
-
-            .products__content {
-                border: 1px solid var(--milkshake-color);
-
-                ::before {
-                    background-image: url(../images/gallery/head-modal/milkshake_2x.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    z-index: 1;
-                }
-
-                ::after {
-                    bottom: 190%;
-                    background-position: top;
-                    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-                    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-                }
-            }
-        }
-    }
-
-    &__checkbox {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
-        clip-path: none;
-        position: absolute;
-        overflow: hidden;
-
-        z-index: -1;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
-    &__content {
-        position: relative;
-        border-radius: 10px;
-        min-width: 130px;
-        min-height: 140px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 250ms 100ms ease-in-out;
-
-        ::before,
         ::after {
-            position: absolute;
-            content: '';
-            min-width: 132px;
-            min-height: 132px;
-            border-radius: 50%;
-            bottom: 230%;
-
-            left: 50%;
-            transform: translate(-50%);
+          bottom: 190%;
+          background-position: top;
+          background: linear-gradient(
+              0deg,
+              rgba(156, 190, 143, 0.7),
+              rgba(156, 190, 143, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
         }
+      }
     }
 
-    &__checkbox[id="ice_cream"]:checked+&__content {
-        transform: scale(1.1);
-        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    &:nth-child(2) {
+      .products__content {
+        border: 1px solid var(--coffee-color);
+
+        ::before {
+          background-image: url(../images/gallery/head-modal/icecoffee_2x.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 1;
+        }
+
+        ::after {
+          bottom: 190%;
+          background-position: top;
+          background: linear-gradient(
+              0deg,
+              rgba(248, 210, 78, 0.7),
+              rgba(248, 210, 78, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+      }
     }
 
-    &__checkbox[id="ice_coffee"]:checked+&__content {
-        transform: scale(1.1);
-        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    }
+    &:nth-child(3) {
+      .products__content {
+        border: 1px solid var(--milkshake-color);
 
-    &__checkbox[id="Milkshake"]:checked+&__content {
-        transform: scale(1.1);
-        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-    }
+        ::before {
+          background-image: url(../images/gallery/head-modal/milkshake_2x.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 1;
+        }
 
-    &__content:hover {
-        transform: scale(1.1);
+        ::after {
+          bottom: 190%;
+          background-position: top;
+          background: linear-gradient(
+              0deg,
+              rgba(213, 117, 63, 0.7),
+              rgba(213, 117, 63, 0.7)
+            ),
+            #d9d9d9;
+          box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+      }
     }
+  }
 
-    &__text {
-        position: absolute;
-        bottom: 20px;
-        margin-top: 20px;
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    clip-path: none;
+    position: absolute;
+    overflow: hidden;
 
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #131313;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__content {
+    position: relative;
+    border-radius: 10px;
+    min-width: 130px;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 250ms 100ms ease-in-out;
+
+    ::before,
+    ::after {
+      position: absolute;
+      content: '';
+      min-width: 132px;
+      min-height: 132px;
+      border-radius: 50%;
+      bottom: 230%;
+
+      left: 50%;
+      transform: translate(-50%);
     }
+  }
+
+  &__checkbox[id='ice_cream']:checked + &__content {
+    transform: scale(1.1);
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+  }
+
+  &__checkbox[id='ice_coffee']:checked + &__content {
+    transform: scale(1.1);
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+  }
+
+  &__checkbox[id='Milkshake']:checked + &__content {
+    transform: scale(1.1);
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+  }
+
+  &__content:hover {
+    transform: scale(1.1);
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 20px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+  }
 }
 
 // ########################################
 .fields {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    // max-height: 100%;
-    min-width: 368px;
-    margin-bottom: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  // max-height: 100%;
+  min-width: 368px;
+  margin-bottom: 32px;
 
-    &__item {
-        height: 42px;
-        padding-left: 15px;
-        background: rgba(248, 210, 78, 0.1);
-        border: 1px solid #84A178;
-        border-radius: 10px;
+  &__item {
+    height: 42px;
+    padding-left: 15px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
 
-        &:focus {
-            border: 2px solid #84A178;
-            outline: none;
-        }
-
-        &::placeholder {
-            font-family: 'Montserrat';
-            line-height: 140%;
-        }
-
-        &:not(:focus):not(:placeholder-shown):valid {
-            background-color: var(--ice-color);
-        }
-
-        &:not(:focus):not(:placeholder-shown):invalid {
-            background-color: var(--milkshake-color);
-        }
+    &:focus {
+      border: 2px solid #84a178;
+      outline: none;
     }
 
-    .textarea {
-        height: 84px;
-        padding-top: 11px;
-        resize: none;
+    &::placeholder {
+      font-family: 'Montserrat';
+      line-height: 140%;
     }
+
+    &:not(:focus):not(:placeholder-shown):valid {
+      background-color: var(--ice-color);
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid {
+      background-color: var(--milkshake-color);
+    }
+  }
+
+  .textarea {
+    height: 84px;
+    padding-top: 11px;
+    resize: none;
+  }
 }

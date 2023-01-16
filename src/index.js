@@ -8,3 +8,4 @@ import './js/products-modal-3.js';
 import './js/franchise-modal.js';
 import './js/header-mobile.js';
 import './js/reviews-slider';
+import './js/active_window';
