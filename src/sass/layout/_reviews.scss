@@ -12,6 +12,7 @@
             & {
                 background-image: url(../images/reviews/reviews-bg-mob-2x.jpg);
             };
+        
     }
 
     @include tablet {
@@ -35,16 +36,32 @@
             & {
                 background-image: url(../images/reviews/reviews-bg-desk-2x.jpg);
             };
+        
         }
     }
 }
 
 .reviews__slider {
     width: 100%;
+    padding: 0 auto;
+
+    @media screen and(max-width:479px) {
+      max-width: 440px;
+    }
+    @include mobile {
+      width: 440px;
+    }
+    @include tablet {
+      width: 705px;
+    }
+    @include desktop {
+      width: 968px;
+    }
 }
 
 .slider__wrapper {
     width: 100%;
+    padding: 0 auto;
 }
 
 .slider__slide {
@@ -107,3 +124,4 @@
         @include font(16, 500, 30, 0.04);
     } 
 }
+

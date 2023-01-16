@@ -1353,10 +1353,32 @@ p {
 
 .reviews__slider {
   width: 100%;
+  padding: 0 auto;
+}
+@media screen and (max-width: 479px) {
+  .reviews__slider {
+    max-width: 440px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .reviews__slider {
+    width: 440px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews__slider {
+    width: 705px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__slider {
+    width: 968px;
+  }
 }
 
 .slider__wrapper {
   width: 100%;
+  padding: 0 auto;
 }
 
 .slider__slide {
