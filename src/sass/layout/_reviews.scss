@@ -1,0 +1,127 @@
+.reviews {
+    padding-top: 178px;
+    padding-bottom: 393px;
+    background-image: url(../images/reviews/reviews-bg-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-mob-2x.jpg);
+            };
+        
+    }
+
+    @include tablet {
+        background-image: url(../images/reviews/reviews-bg-tablet-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-tablet-2x.jpg);
+            };
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/reviews/reviews-bg-desk-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/reviews/reviews-bg-desk-2x.jpg);
+            };
+        
+        }
+    }
+}
+
+.reviews__slider {
+    width: 100%;
+    padding: 0 auto;
+
+    @media screen and(max-width:479px) {
+      max-width: 440px;
+    }
+    @include mobile {
+      width: 440px;
+    }
+    @include tablet {
+      width: 705px;
+    }
+    @include desktop {
+      width: 968px;
+    }
+}
+
+.slider__wrapper {
+    width: 100%;
+    padding: 0 auto;
+}
+
+.slider__slide {
+    text-align: center;
+}
+
+.slide__container {
+    width: 100%;
+}
+
+.slide__image {
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.slide__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 39px;
+    border-radius: 10px;
+    background-color: $bgcolor-primary;
+    margin-bottom: 32px;
+
+    @include tablet {
+        padding: 28px 80px 29px 80px;
+        border-radius: 24px;
+    }
+
+    @include desktop {
+        padding: 43px 109px;
+    } 
+}
+
+.slide__text {
+    @include font(12, 400, 30.6, 0.04); 
+
+    @include tablet {
+        @include font(14, 500, 26, 0.04);
+    }
+
+    @include desktop {
+        @include font(16, 500, 30, 0.04);
+    } 
+}
+
+.slide__label {
+    @include font(20, 500, 27, 0.04);
+    color: $color-black-primary;
+
+    @include tablet {
+        @include font(16, 500, 30, 0.04);
+    }
+
+    @include desktop {
+        @include font(16, 500, 30, 0.04);
+    } 
+}
+

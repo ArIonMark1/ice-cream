@@ -7,3 +7,4 @@ import './js/products-modal-2.js';
 import './js/products-modal-3.js';
 import './js/franchise-modal.js';
 import './js/header-mobile.js';
+import './js/reviews-slider';
