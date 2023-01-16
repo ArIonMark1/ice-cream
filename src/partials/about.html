@@ -24,22 +24,32 @@
           This is enough to choose ice cream and coffee for any mood!
         </p>
         <!-- </div> -->
-        <button type="button" class="about-btn btn" data modal open>
-          Read more
+        <button type="button" class="about-btn btn" data-about-modal-open>Read more<svg width="11" height="11" class="about-btn__icon">
+            <use href="./images/svg/icon.svg#icon-small_arrow"></use>
+        </svg>
         </button>
       </div>
-      <!-- <div class="backdrop is-hidden" data modal>
+      <div class="about-backdrop is-hidden" data-about-modal>
                 <div class="about-modal">
-                    <h2 class="about-modal__title">How it’s made with?</h2>
+                    <div class="about-modal__field">
+                    <h2 class="about-modal__title">How it’s made?</h2>
+                    <iframe class="about-modal__video" width="224" height="199" src="https://www.youtube.com/embed/nzyTf9Ym-Zo"
+                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                     allowfullscreen></iframe>
                     <p class="about-modal__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et
+                        sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, incididunt ut labore et
                     </p>
 
-                    <button class="btn-close" data-modal-close></button>
+                    <button class="about-btn-close" data-about-modal-close>
+                    <svg width="20" height="20" class="close-icon">
+                        <use href="./images/svg/icon.svg#icon-close_button_cross"></use>
+                    </svg>
+                </button>
                 </div>
-            </div> -->
+                </div>
+            </div>
     </div>
   </div>
 </section>

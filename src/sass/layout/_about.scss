@@ -1,5 +1,6 @@
 .about{
     background-color: $bgcolor-primary;
+    padding-top: 60px;
 }
 
 .about__set{
@@ -30,8 +31,6 @@ color: $color-white-secondary;
  @include tablet{
     width: 100%;
     @include font(34, 400, 43, 0.06);
-    text-align: center;  
-    text-transform: uppercase;
     margin-top: 12px;
  
  }
@@ -39,8 +38,7 @@ color: $color-white-secondary;
 @include desktop {
 width:100%;
 @include font(36, 400, 45, 0.06);
-text-align: center;
-text-transform: uppercase;
+
 }
 
 }
@@ -54,7 +52,7 @@ margin-top: 12px;
 
   @include tablet{
     @include font(22, 800, 27, 0.04);
-margin-top: auto;
+    margin-top: auto;
  
  }
    @include desktop{
@@ -88,10 +86,10 @@ margin-top: auto;
 }
 
 .about__box{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     margin: auto;
     background: $bgcolor-accent-linear;
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
@@ -106,7 +104,7 @@ margin-top: auto;
         width: 330px;
         height: 330px; 
         border-radius: 165px;
-        box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+        
     }
 
     @include desktop{
@@ -114,7 +112,7 @@ margin-top: auto;
         width: 490px;
         height: 490px;
         border-radius: 250px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        
     }
 }
 
@@ -188,11 +186,13 @@ margin-top: auto;
     }
 
     .about-btn{
+        
         margin-top: 24px;
         @extend %btn-primary;
+        padding: 12px 35px 12px 34px;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
         @include tablet{
@@ -206,3 +206,8 @@ margin-top: auto;
         }
         
     }
+
+     .about-btn__icon{
+        margin-left: 4px;
+        fill:$color-black-primary;
+     }
