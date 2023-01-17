@@ -9,7 +9,7 @@
 }
 .contacts__list {
   position: relative;
-  top: -100px;
+  top: -200px;
 
   @include tablet {
     display: flex;
@@ -219,7 +219,7 @@
   position: relative;
   // margin-top: 20px;
   position: relative;
-  top: -50px;
+  top: -100px;
 
   @include tablet {
     display: flex;
