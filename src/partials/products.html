@@ -69,11 +69,11 @@
     
             <form class="products__form">
                 <div class="products__input">
-                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="name" id="name" placeholder="Name" required pattern="[a-z,A-Z]{3,13}" ,inlength="3" maxlength="13" title="Format: 3-13 letters (A-z)">
                 </div>
     
                 <div class="products__input">
-                    <input type="tel" name="tel" id="tel" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="13" maxlength="13" title="Format: 067-111-11-11">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="13" maxlength="13" title="Format: 067-111-11-11">
                 </div>
     
                 <div class="products__textarea">
@@ -123,11 +123,13 @@
 
             <form class="products__form">
                 <div class="products__input">
-                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="name" id="name" placeholder="Name" required pattern="[a-z,A-Z]{3,13}" ,inlength="3"
+                        maxlength="13" title="Format: 3-13 letters (A-z)">
                 </div>
-
+                
                 <div class="products__input">
-                    <input type="tel" name="tel" id="tel" placeholder="Phone">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        minlength="13" maxlength="13" title="Format: 067-111-11-11">
                 </div>
 
                 <div class="products__textarea">
@@ -177,11 +179,13 @@
     
             <form class="products__form">
                 <div class="products__input">
-                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="name" id="name" placeholder="Name" required pattern="[a-z,A-Z]{3,13}" ,inlength="3"
+                        maxlength="13" title="Format: 3-13 letters (A-z)">
                 </div>
-    
+                
                 <div class="products__input">
-                    <input type="tel" name="tel" id="tel" placeholder="Phone">
+                    <input type="tel" name="tel" id="tel" placeholder="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        minlength="13" maxlength="13" title="Format: 067-111-11-11">
                 </div>
     
                 <div class="products__textarea">

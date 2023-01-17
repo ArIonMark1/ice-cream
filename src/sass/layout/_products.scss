@@ -615,6 +615,14 @@
   border: 1px solid #84A178;
   border-radius: 10px;
   @include font(14, 400, 20, 0.04);
+  
+  &:not(:placeholder-shown):invalid{
+    border: 2px solid red;
+  }
+
+  &:hover,:focus{
+    border: 2px solid #F8D24E;
+  }
 
   @include tablet {
       width: 368px;
@@ -635,6 +643,10 @@
   border-radius: 10px;
   @include font(14, 400, 20, 0.04);
   resize: vertical;
+
+  &:hover,:focus {
+      border: 2px solid #F8D24E;
+  }
 
   @include tablet {
       width: 368px;
