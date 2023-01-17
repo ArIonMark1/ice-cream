@@ -1,159 +1,183 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 20px;
-    @include mobile {
-        padding-bottom: 24px;}
-    @include tablet{
-        padding-top: 40px;
-        padding-bottom: 12px;}
-    @include desktop {
-        padding-top: 120px;}
+  padding-top: 60px;
+  padding-bottom: 20px;
+  @include mobile {
+    padding-bottom: 24px;
+  }
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 12px;
+  }
+  // @include desktop {
+  //     padding-top: 120px;}
 }
 
 .footer__top {
-    margin-bottom: 20px; 
-    @include tablet{
-        margin-bottom: 40px;}
-        @include desktop {
-            margin-bottom: 40px;}
-}    
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
 
 .footer__headlines {
+  margin-bottom: 60px;
+  @include tablet {
+    position: absolute;
+    margin-bottom: 32px;
+  }
+  @include desktop {
     margin-bottom: 60px;
-    @include tablet{
-        position: absolute;
-        margin-bottom: 32px;}
-    @include desktop{ 
-        margin-bottom: 60px;
-    }   
+  }
 }
 .footer__title {
-    @include font(18,700,22);
-    text-transform: uppercase;
-    color: $color-white-secondary;
-    margin-bottom: 16px;
-    max-width: 232px;
-    @include tablet {
-        @include font(26,700,32,0.04);
-        margin-bottom: 8px;
-        max-width: 352px;}
-    @include desktop {
-        @include font(30,400,37,0.04);
-        max-width: 504px;
-        margin-bottom: 14px;}
+  @include font(18, 700, 22);
+  text-transform: uppercase;
+  color: $color-white-secondary;
+  margin-bottom: 16px;
+  max-width: 232px;
+  @include tablet {
+    @include font(26, 700, 32, 0.04);
+    margin-bottom: 8px;
+    max-width: 352px;
+  }
+  @include desktop {
+    @include font(30, 400, 37, 0.04);
+    max-width: 504px;
+    margin-bottom: 14px;
+  }
 }
 
 .footer__subtitle {
-    @include font(34,700,41,0.04);
-    text-transform: uppercase;
-    color: $color-white-secondary;
-    max-width: 200px;
-    @include tablet {
-        @include font(48,700,59,0.06);
-        max-width: 352px;}
-    @include desktop {
-        @include font(57.69,700,71,0.06);
-        max-width: 497px;
-    }}
-    
+  @include font(34, 700, 41, 0.04);
+  text-transform: uppercase;
+  color: $color-white-secondary;
+  max-width: 200px;
+  @include tablet {
+    @include font(48, 700, 59, 0.06);
+    max-width: 352px;
+  }
+  @include desktop {
+    @include font(57.69, 700, 71, 0.06);
+    max-width: 497px;
+  }
+}
+
 .footer__network {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer__list {
-    @extend %list;
-    display: flex;
-    justify-content: flex-end;
+  @extend %list;
+  display: flex;
+  justify-content: flex-end;
 }
 .footer__item {
-    &:not(:last-child){
-        margin-right: 20px;}
-        @include tablet{
-        margin-top: 61px;}
-        @include desktop{
-            margin-top: 18px;}
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  @include tablet {
+    margin-top: 61px;
+  }
+  @include desktop {
+    margin-top: 18px;
+  }
 }
 
-.footer__link, .footer__tel {
-    @extend %link
+.footer__link,
+.footer__tel {
+  @extend %link;
 }
 
 .footer__link {
-    width: 34px;
-    height: 34px; 
-    padding: 7px;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border-radius: 50%;
+  @include centerdFlex();
+  background-color: $color-accent;
+  fill: #84a178;
+  transition: fill $duration $cubic;
+  &:hover,
+  &:focus {
     border-radius: 50%;
-    @include centerdFlex();
-    background-color: $color-accent;
-    fill: #84A178;
-    transition: fill $duration $cubic;
-        &:hover,&:focus {
-        border-radius: 50%;
-        fill: $color-white-secondary;}
+    fill: $color-white-secondary;
+  }
 }
 .footer-icon {
-    fill: currentColor;}
+  fill: currentColor;
+}
 
 .footer__phone {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-    @include tablet{
-        margin-top: 14px;}
-        @include desktop {
-            margin-top: 20px;}
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  @include tablet {
+    margin-top: 14px;
+  }
+  @include desktop {
+    margin-top: 20px;
+  }
 }
 
 .footer__contact {
-    @include font(12,700,22); 
-    color: $color-black-primary;
-    margin-right: 5px;
-    @include tablet{
-    @include font(14,700,26, 0.02);}
-    @include desktop {
-        @include font(16,700,30,0.02);}
+  @include font(12, 700, 22);
+  color: $color-black-primary;
+  margin-right: 5px;
+  @include tablet {
+    @include font(14, 700, 26, 0.02);
+  }
+  @include desktop {
+    @include font(16, 700, 30, 0.02);
+  }
 }
 
 .footer__tel {
-    @include font(12,700,22); 
-    color: $color-white-secondary;
-    padding-top: 10px;
-    padding-bottom: 20px; 
-    @include tablet{
-        padding-top: 20px;
-        @include font(14,700,26, 0.02);}
-    @include desktop {
-        @include font(16,700,30,0.02);}  
+  @include font(12, 700, 22);
+  color: $color-white-secondary;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @include tablet {
+    padding-top: 20px;
+    @include font(14, 700, 26, 0.02);
+  }
+  @include desktop {
+    @include font(16, 700, 30, 0.02);
+  }
 }
 .footer__bottom::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background-color:#E1E1E1;
-    @include desktop {
-        position: relative;}
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  @include desktop {
+    position: relative;
+  }
 }
 .footer__bill {
-    @extend %list;
-    padding-top: 20px;
-    @include tablet {
-        padding-top: 12px;
-        display:flex;
-        justify-content: center;
-}   
+  @extend %list;
+  padding-top: 20px;
+  @include tablet {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__copyright {
-    @include font(14,700,21); 
-    text-align: center;
-    color: $color-black-light;
-    @include tablet {
-        @include font(14,700,26,0.02);}
-    @include desktop {
-        @include font(12,700,22,0.02);
-    }
+  @include font(14, 700, 21);
+  text-align: center;
+  color: $color-black-light;
+  @include tablet {
+    @include font(14, 700, 26, 0.02);
+  }
+  @include desktop {
+    @include font(12, 700, 22, 0.02);
+  }
 }
