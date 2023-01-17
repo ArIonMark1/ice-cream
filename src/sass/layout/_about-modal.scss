@@ -115,6 +115,7 @@
             align-items: center;
             justify-content: center;
             border: none;
+            border-radius: 50%;
             fill:$color-black-primary;  
             background-color: $color-white-primary; 
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,7 +123,7 @@
         
             &:hover,
             &:focus{
-            fill:$color-accent;
+            background-color: $color-button-hover;
              
             @include tablet{
                 width: 24px;

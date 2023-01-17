@@ -159,9 +159,13 @@
 }
 
 .menu-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
   display: block;
-  margin-left: 195px;
-  margin-top: 12px;
+  // margin-left: 195px;
+  // margin-top: 12px;
 
   padding: 10px;
 
@@ -179,11 +183,11 @@
   }
 
   @media screen and (min-width: 480px) {
-    margin-left: 345px;
+    // margin-left: 345px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 615px;
+    // margin-left: 615px;
   }
 }
 
@@ -251,6 +255,16 @@
     background-color: #ababab;
     border: #ababab;
   }
+
+    &:hover {
+      background-color: $color-button-hover;
+    }
+  
+    &:focus {
+      background-color: $color-button-hover;
+      color: $color-white-primary;
+      fill: $color-white-primary;
+    }
 
   @media screen and (min-width: 480px) {
     margin-top: 114px;
