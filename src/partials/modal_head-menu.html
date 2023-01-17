@@ -1,0 +1,97 @@
+    <div class="overwindow js-menu-container-menu" id="mobile-menu">
+      <!-- ###################################### -->
+
+      <div class="modalwindow">
+        <button type="button" class="modalwindow__button js-close-menu-menu">
+          <svg class="modalwindow__image" width="30" height="30">
+            <use
+              href="images/gallery/svg/icon.svg#icon-close_button_cross"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- Content -->
+        <form class="form">
+          <!-- <fieldset> -->
+          <legend><h3 class="form__header">Buy now</h3></legend>
+          <!-- ################################################# -->
+          <ul class="modal-products">
+            <li class="modal-products__item">
+              <input
+                class="modal-products__checkbox"
+                type="checkbox"
+                name="product"
+                id="ice_cream"
+                value="Ice cream"
+              />
+              <label class="modal-products__content" for="ice_cream"
+                ><span class="modal-products__text">Ice cream</span></label
+              >
+            </li>
+            <li class="modal-products__item">
+              <input
+                class="modal-products__checkbox"
+                type="checkbox"
+                name="product"
+                id="ice_coffee"
+                value="Ice coffee"
+              />
+              <label class="modal-products__content" for="ice_coffee"
+                ><span class="modal-products__text">Ice coffee</span></label
+              >
+            </li>
+            <li class="modal-products__item">
+              <input
+                class="modal-products__checkbox"
+                type="checkbox"
+                name="product"
+                id="Milkshake"
+                value="Milkshake"
+              />
+              <label class="modal-products__content" for="Milkshake"
+                ><span class="modal-products__text">Milkshake</span></label
+              >
+            </li>
+          </ul>
+          <!-- ################################################# -->
+          <!-- </fieldset> -->
+          <div class="fields">
+            <input
+              class="fields__item"
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              title="Введіть ваше ім'я"
+              required
+            />
+            <input
+              class="fields__item"
+              type="tel"
+              name="user_tel"
+              placeholder="Phone"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title="+380 (63) 534-78-30"
+              required
+            />
+            <textarea
+              class="fields__item textarea"
+              name="user_comment"
+              id="user_comment"
+              rows="4"
+              placeholder="Comment"
+              title="Можете залишити ваші побажання"
+            ></textarea>
+          </div>
+
+          <button class="form__button" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
