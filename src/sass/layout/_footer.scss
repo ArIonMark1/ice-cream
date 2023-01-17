@@ -1,11 +1,11 @@
 .footer {
-  padding-top: 60px;
+  //   padding-top: 60px;
   padding-bottom: 20px;
-  @include mobile {
-    padding-bottom: 24px;
-  }
+  //   @include mobile {
+  //     // padding-bottom: 24px;
+  //   }
   @include tablet {
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 12px;
   }
   // @include desktop {
