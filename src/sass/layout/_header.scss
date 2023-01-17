@@ -252,6 +252,16 @@
     border: #ababab;
   }
 
+    &:hover {
+      background-color: $color-button-hover;
+    }
+  
+    &:focus {
+      background-color: $color-button-hover;
+      color: $color-white-primary;
+      fill: $color-white-primary;
+    }
+
   @media screen and (min-width: 480px) {
     margin-top: 114px;
   }
