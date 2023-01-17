@@ -120,7 +120,7 @@
       margin-bottom: 12px;
     }
   }
-}
+ }
 
 .information__input {
   width: 368px;
@@ -146,6 +146,9 @@
       font-size: 12px;
       line-height: 1.42;
     }
+  }
+  &:not(:placeholder-shown):invalid{
+    border: 2px solid red;
   }
 }
 .information__input:focus,
