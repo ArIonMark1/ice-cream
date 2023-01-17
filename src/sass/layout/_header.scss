@@ -90,7 +90,7 @@
       background-color: #ababab;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
 
@@ -256,15 +256,15 @@
     border: #ababab;
   }
 
-    &:hover {
-      background-color: $color-button-hover;
-    }
-  
-    &:focus {
-      background-color: $color-button-hover;
-      color: $color-white-primary;
-      fill: $color-white-primary;
-    }
+  &:hover {
+    background-color: $color-button-hover;
+  }
+
+  &:focus {
+    background-color: $color-button-hover;
+    color: $color-white-primary;
+    fill: $color-white-primary;
+  }
 
   @media screen and (min-width: 480px) {
     margin-top: 114px;

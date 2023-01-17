@@ -32,7 +32,7 @@
     justify-content: space-between;
     padding-top: 50px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       padding-top: 40px;
       padding-bottom: 32px;
     }
@@ -77,7 +77,7 @@
     margin-right: 0;
     text-align: end;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -134,18 +134,17 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-        border: 2px solid $border-btn-secondary;
+      border: 2px solid $border-btn-secondary;
     }
 
     &:focus {
-        border: 2px solid $border-btn-secondary;
-        color: $color-white-primary;
+      border: 2px solid $border-btn-secondary;
+      color: $color-white-primary;
     }
 
     &:disabled {
-        border: 2px solid #ababab;
+      border: 2px solid #ababab;
     }
-
 
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -207,7 +206,7 @@
 
     color: $color-white-secondary;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
 
@@ -254,17 +253,17 @@
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 767px) {
       width: 152px;
       bottom: 12px;
       left: 32px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199px) {
       bottom: 65px;
       left: 16px;
       width: 225px;
@@ -274,11 +273,11 @@
   &__dots-image {
     position: absolute;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       display: none;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199px) {
       bottom: 0;
       left: 16px;
       width: 1200px;
@@ -301,7 +300,7 @@
       100% {
         transform: rotate(360deg);
       }
-    }  
+    }
 
     @keyframes blinking {
       0% {
