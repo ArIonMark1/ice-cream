@@ -1,9 +1,46 @@
+.gallery__container {
+  position: relative;
+  justify-content: center
+}
+
+.gallery__slide {
+  position: absolute;
+  pointer-events: none;
+}
+
+.gallery__img {
+  object-fit: cover;
+  border-radius: 8px;
+
+  @include mobile {
+    height: 204px;
+    border-radius: 8px;
+
+  }
+  @include tablet {
+    height: 327px;
+    border-radius: 18px;
+
+  }
+  @include desktop {
+    height: 422px;
+    border-radius: 24px;
+    border-radius: 8px;
+  }
+
+}
+
+img.gallery__img {
+  margin-right: 0;
+}
+
 #slides {
   position: relative;
   height: 130px;
   padding: 0px;
-  margin: 0px;
+  margin: 0px auto;
   list-style-type: none;
+  
 }
 
 .slide {
