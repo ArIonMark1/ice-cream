@@ -103,6 +103,18 @@
 .logo {
   fill: $color-accent;
   padding-top: 10px;
+  width: 40px;
+
+  @media screen and (min-width: 480px) {
+    width: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+  }
+}
+picture {
+  width: 100%;
 }
 
 .menu-content {
