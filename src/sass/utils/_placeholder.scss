@@ -50,7 +50,7 @@
 
   cursor: pointer;
 
-  transition: gettransition(background-color), gettransition(color);
+  transition: gettransition(border), gettransition(color);
 
   &:hover {
     border: $border-btn-secondary;
