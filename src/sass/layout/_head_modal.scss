@@ -117,7 +117,7 @@
 }
 
 // ########################################
-.products {
+.modal-products {
   @extend .list;
   position: relative;
   display: flex;
@@ -139,83 +139,99 @@
     position: relative;
     flex-direction: column;
     border-radius: 20px;
+    transition: transform 250ms 100ms ease-in-out;
 
+    // ########################################
     &:nth-child(1) {
-      // border: 2px solid var(--ice-color);
-      .products__content {
-        border: 1px solid var(--ice-color);
-
-        ::before {
-          background-image: url(../images/gallery/head-modal/icecream_2x.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          z-index: 1;
-        }
-
-        ::after {
-          bottom: 190%;
-          background-position: top;
-          background: linear-gradient(
-              0deg,
-              rgba(156, 190, 143, 0.7),
-              rgba(156, 190, 143, 0.7)
-            ),
-            #d9d9d9;
-          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-        }
-      }
+      border: 2px solid var(--ice-color);
     }
 
+    &:nth-child(1)::before {
+      background-image: url(../images/gallery/head-modal/icecream_2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    &:nth-child(1)::after {
+      bottom: 40%;
+      background-position: top;
+      background: linear-gradient(0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+
+    // =====================================================================
     &:nth-child(2) {
-      .products__content {
-        border: 1px solid var(--coffee-color);
-
-        ::before {
-          background-image: url(../images/gallery/head-modal/icecoffee_2x.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          z-index: 1;
-        }
-
-        ::after {
-          bottom: 190%;
-          background-position: top;
-          background: linear-gradient(
-              0deg,
-              rgba(248, 210, 78, 0.7),
-              rgba(248, 210, 78, 0.7)
-            ),
-            #d9d9d9;
-          box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-        }
-      }
+      border: 2px solid var(--coffee-color);
     }
+
+    &:nth-child(2)::before {
+      background-image: url(../images/gallery/head-modal/icecoffee_2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    &:nth-child(2)::after {
+      bottom: 40%;
+      background-position: top;
+      background: linear-gradient(0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    }
+
+    // =====================================================================
 
     &:nth-child(3) {
-      .products__content {
-        border: 1px solid var(--milkshake-color);
-
-        ::before {
-          background-image: url(../images/gallery/head-modal/milkshake_2x.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          z-index: 1;
-        }
-
-        ::after {
-          bottom: 190%;
-          background-position: top;
-          background: linear-gradient(
-              0deg,
-              rgba(213, 117, 63, 0.7),
-              rgba(213, 117, 63, 0.7)
-            ),
-            #d9d9d9;
-          box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-        }
-      }
+      border: 2px solid var(--milkshake-color);
     }
+
+    &:nth-child(3)::before {
+
+      background-image: url(../images/gallery/head-modal/milkshake_2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    &:nth-child(3)::after {
+      bottom: 40%;
+      background-position: top;
+      background: linear-gradient(0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+
   }
+
+  &__item::before,
+  &__item::after {
+    position: absolute;
+    content: '';
+    width: 132px;
+    height: 132px;
+    left: -2;
+    bottom: 45%;
+    // border: 1px solid red;
+    border-radius: 50%;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    transform: scale(1.1);
+  }
+
+  // &__checkbox[id='ice_cream']:checked + &__item {
+  //   background-color: red;
+  // }
+  // +++++++++++++++++++++++++++
 
   &__checkbox {
     position: absolute;
@@ -231,61 +247,35 @@
   }
 
   &__content {
-    position: relative;
-    border-radius: 10px;
-    min-width: 130px;
-    min-height: 140px;
+    // position: relative;
+    border-radius: 20px;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 250ms 100ms ease-in-out;
-
-    ::before,
-    ::after {
-      position: absolute;
-      content: '';
-      min-width: 132px;
-      min-height: 132px;
-      border-radius: 50%;
-      bottom: 230%;
-
-      left: 50%;
-      transform: translate(-50%);
-    }
   }
 
-  &__checkbox[id='ice_cream']:checked + &__content {
-    transform: scale(1.1);
-    background: linear-gradient(
-        0deg,
+  &__checkbox[id='ice_cream']:checked+&__content {
+    fill: #131313;
+    background: linear-gradient(0deg,
         rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
+        rgba(156, 190, 143, 0.7)),
       #d9d9d9;
   }
 
-  &__checkbox[id='ice_coffee']:checked + &__content {
-    transform: scale(1.1);
-    background: linear-gradient(
-        0deg,
+  &__checkbox[id='ice_coffee']:checked+&__content {
+    background: linear-gradient(0deg,
         rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
+        rgba(248, 210, 78, 0.7)),
       #d9d9d9;
   }
 
-  &__checkbox[id='Milkshake']:checked + &__content {
-    transform: scale(1.1);
-    background: linear-gradient(
-        0deg,
+  &__checkbox[id='Milkshake']:checked+&__content {
+    background: linear-gradient(0deg,
         rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)
-      ),
+        rgba(213, 117, 63, 0.7)),
       #d9d9d9;
-  }
-
-  &__content:hover {
-    transform: scale(1.1);
   }
 
   &__text {
@@ -299,6 +289,7 @@
     line-height: 1.25;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    // border: 1px solid red;
     color: #131313;
   }
 }
