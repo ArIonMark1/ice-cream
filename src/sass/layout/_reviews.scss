@@ -42,47 +42,50 @@
   }
 }
 
-.reviews__slider {
-  width: 100%;
-  padding: 0 auto;
+.reviews__container {
+  padding: 0px 0px;
+}
 
-  @media screen and(max-width:479px) {
-    max-width: 440px;
-  }
-  @include mobile {
-    width: 440px;
-  }
-  @include tablet {
-    width: 705px;
-  }
-  @include desktop {
-    width: 968px;
-  }
+.reviews__slider {
+  width: 100vw;
 }
 
 .slider__wrapper {
-  width: 100%;
-  padding: 0 auto;
+  width: 100vw;
+  text-align: center;
 }
 
 .slider__slide {
+  width: 100vw;
   text-align: center;
 }
 
 .slide__container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: auto;
+
+  @media tablet {
+    padding: 0 auto;
+  }
+
+  @include desktop {
+    padding: 0 auto;
+  }
 }
 
 .slide__image {
   width: 85px;
   height: 85px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 32px;
+  
 }
 
 .slide__wrapper {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -91,14 +94,25 @@
   background-color: $bgcolor-primary;
   margin-bottom: 32px;
 
+  @media screen and(max-width:479px) {
+    max-width: 440px;
+  }
+
+  @include mobile {
+    width: 440px;
+  }
+
   @include tablet {
+    width: 705px;
     padding: 28px 80px 29px 80px;
     border-radius: 24px;
   }
 
   @include desktop {
+    width: 968px;
     padding: 43px 109px;
   }
+
 }
 
 .slide__text {
